@@ -1,0 +1,13 @@
+{
+  "name": "sait",
+  "version": "1.0.0",
+  "description": "A modern HTML/CSS/JavaScript website project",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Build command placeholder'"
+  },
+  "keywords": ["html", "css", "javascript", "website"],
+  "author": "",
+  "license": "MIT"
+}
