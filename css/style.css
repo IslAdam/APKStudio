@@ -861,9 +861,11 @@ section h2::after {
 
 .contacts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2.5rem;
     margin-top: 2rem;
+    justify-items: center; /* центрируем плитки внутри сетки */
+    align-items: stretch;
 }
 
 .contact-item {
@@ -875,6 +877,36 @@ section h2::after {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(236, 234, 230, 0.18);
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 360px; /* единая максимальная ширина плитки */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* центрируем содержимое по горизонтали */
+}
+
+/* Адрес выделяем шире на больших экранах */
+.contacts-grid .contact-item.address {
+    /* Занимает всю ширину сетки, но ограничена max-width и центрируется */
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 760px;
+    text-align: center; /* текст адреса по центру */
+}
+
+.contacts-grid .contact-item.address p {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .contacts-grid .contact-item.address {
+        grid-column: 1 / -1; /* на узких экранах также занимает всю ширину, остаётся центрированной */
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }
 
 .contact-item:hover {
