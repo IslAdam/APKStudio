@@ -75,12 +75,17 @@ a {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.4rem;
+    margin-left: 0;
+    margin-right: 0;
+    flex: none;
+    justify-content: flex-start;
 }
 
 .nav-link {
     color: #F8F8F6;
     font-weight: 500;
+    font-size: 1.08rem;
     transition: all 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
@@ -1033,6 +1038,7 @@ section h2::after {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        margin-left: auto;
     }
 
     .nav-menu {
@@ -1049,6 +1055,9 @@ section h2::after {
         transition: max-height 0.3s ease;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
         border-top: 1px solid rgba(236, 234, 230, 0.18);
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: flex-start;
     }
 
     .nav-menu.active {
