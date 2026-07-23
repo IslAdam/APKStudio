@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Навигация -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
@@ -20,84 +19,80 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="catalog.html" class="nav-link">Портфолио</a></li>
-                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="catalog.html" class="nav-link">Проекты</a></li>
+                <li><a href="index.html#services" class="nav-link">Услуги</a></li>
                 <li><a href="employees.html" class="nav-link">Сотрудники</a></li>
                 <li><a href="index.html#contacts" class="nav-link">Контакты</a></li>
+                <li><a href="contact.html" class="nav-link">Заявка</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Заголовок страницы -->
-    <section class="page-header">
-        <div class="container">
-            <h1>О студии APK Studio</h1>
-            <p>Мы создаём архитектуру и интерьер, который ощущается как часть жизни</p>
+    <section class="page-header page-header-studio">
+        <div class="container page-header-grid">
+            <div class="page-header-copy" data-reveal="up">
+                <span class="section-kicker">О студии</span>
+                <h1>Создаем архитектуру и интерьер с жесткой логикой и точной эстетикой.</h1>
+                <p>APK Studio проектирует жилые и коммерческие пространства, в которых композиция, функция и материалы работают как единая система.</p>
+            </div>
+            <article class="page-header-note" data-reveal="up" data-delay="120">
+                <span class="hero-note-label">Подход</span>
+                <strong>Строгий визуальный язык</strong>
+                <p>Минимум случайных решений, максимум структуры, ритма и контроля на каждом этапе.</p>
+            </article>
         </div>
     </section>
 
-    <!-- Основной контент -->
-    <section class="about-content">
-        <div class="container">
-            <div class="about-section">
-                <h2>Наша философия</h2>
-                <p>APK Studio — это архитектурная студия, которая работает на стыке функциональности, эстетики и личного смысла пространства. Мы не просто оформляем интерьер, а продумываем, как жильё или рабочее пространство будет жить и развиваться вместе с человеком.</p>
+    <section class="about-content interior-page-section">
+        <div class="container page-stack">
+            <div class="page-split">
+                <article class="about-section page-panel" data-reveal="up">
+                    <h2>Наша философия</h2>
+                    <p>Мы рассматриваем пространство как архитектурную систему, а не набор декоративных приемов. Каждый проект строится на точной планировке, естественном свете, пропорциях и материальной дисциплине.</p>
+                </article>
+                <article class="about-section page-panel page-panel-accent" data-reveal="up" data-delay="100">
+                    <h2>Что для нас важно</h2>
+                    <p>Чистая композиция, удобная повседневная логика, честный бюджет и реализация без потери идеи. Поэтому мы продумываем проект до уровня сценариев жизни, а не только визуального впечатления.</p>
+                </article>
             </div>
 
-            <div class="about-section">
-                <h2>Почему выбирают нас?</h2>
-                <ul class="benefits-list">
-                    <li>
-                        <strong>Индивидуальный подход</strong>
-                        <p>Каждый проект создаётся с учётом образа жизни клиента, его привычек и пожеланий.</p>
-                    </li>
-                    <li>
-                        <strong>Точность в деталях</strong>
-                        <p>Мы продумываем планировку, свет, материалы и эргономику каждого помещения.</p>
-                    </li>
-                    <li>
-                        <strong>Баланс формы и функции</strong>
-                        <p>Пространство становится не только красивым, но и удобным для ежедневной жизни.</p>
-                    </li>
-                    <li>
-                        <strong>Поддержка на всех этапах</strong>
-                        <p>Мы сопровождаем проект от концепции и визуализации до реализации.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="about-section">
-                <h2>Как мы работаем</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Диалог</h3>
-                        <p>Мы изучаем ваши предпочтения, привычки и задачи.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Концепция</h3>
-                        <p>Разрабатываем образ пространства и его структуру.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Реализация</h3>
-                        <p>Сопровождаем проект от идеи до финального результата.</p>
-                    </div>
+            <article class="about-section page-panel" data-reveal="up">
+                <div class="section-heading section-heading-compact">
+                    <span class="section-kicker">Почему выбирают нас</span>
+                    <h2>Работаем строго, последовательно и без визуального шума.</h2>
                 </div>
-            </div>
-            <div class="about-section cta-section">
+                <ul class="benefits-list benefits-list-studio">
+                    <li><strong>Индивидуальная структура</strong><p>Планировка и композиция проектируются под образ жизни конкретного клиента.</p></li>
+                    <li><strong>Точность в деталях</strong><p>Свет, хранение, мебель и материалы объединяются в единую систему.</p></li>
+                    <li><strong>Контроль реализации</strong><p>Сопровождаем проект так, чтобы итог совпадал с исходной концепцией.</p></li>
+                    <li><strong>Честная коммуникация</strong><p>Этапы, сроки и объем работ понятны заранее, без лишней неопределенности.</p></li>
+                </ul>
+            </article>
+
+            <article class="about-section page-panel" data-reveal="up">
+                <div class="section-heading section-heading-compact">
+                    <span class="section-kicker">Процесс</span>
+                    <h2>Как строится работа над проектом</h2>
+                </div>
+                <div class="steps steps-studio">
+                    <div class="step"><div class="step-number">01</div><h3>Анализ</h3><p>Изучаем задачи, привычки, планировку и визуальные ориентиры.</p></div>
+                    <div class="step"><div class="step-number">02</div><h3>Концепция</h3><p>Формируем композицию пространства, материалы и общий характер проекта.</p></div>
+                    <div class="step"><div class="step-number">03</div><h3>Реализация</h3><p>Готовим документацию и сопровождаем исполнение до результата.</p></div>
+                </div>
+            </article>
+
+            <article class="about-section cta-section page-panel page-panel-accent" data-reveal="up">
                 <h2>Готовы обсудить проект?</h2>
-                <p>Напишите нам, и мы подберём подходящую форму сотрудничества для вашего объекта.</p>
-                <a href="index.html#contacts" class="btn btn-primary btn-large">Связаться</a>
-            </div>
+                <p>Если вам нужен строгий, цельный и профессионально собранный интерьер — подготовим предложение под ваш объект.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Оставить заявку</a>
+            </article>
         </div>
     </section>
 
-    <!-- Футер -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 APK Studio. Все права защищены.</p>
+        <div class="container footer-content">
+            <div><h3>APK Studio</h3><p>Архитектурный дизайн интерьеров и частных домов</p></div>
+            <div><p><a href="about.html">О студии</a></p><p><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p><p><a href="tel:+79896668777">+7 989 666 8777</a></p></div>
         </div>
     </footer>
 

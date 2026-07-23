@@ -1,17 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Детали домика - Caspian Villas</title>
+    <title>Детали проекта - APK Studio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Навигация -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a href="index.html" class="logo">⌂ Caspian Villas</a>
+                <a href="index.html" class="logo">APK Studio</a>
             </div>
             <button class="hamburger" id="hamburger">
                 <span></span>
@@ -20,67 +19,52 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="catalog.html" class="nav-link">Каталог</a></li>
-                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="catalog.html" class="nav-link">Проекты</a></li>
+                <li><a href="index.html#services" class="nav-link">Услуги</a></li>
                 <li><a href="employees.html" class="nav-link">Сотрудники</a></li>
                 <li><a href="index.html#contacts" class="nav-link">Контакты</a></li>
+                <li><a href="contact.html" class="nav-link">Заявка</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Контент -->
-    <section class="property-detail">
-        <div class="container">
-            <div class="back-link">
-                <a href="catalog.html">← Назад в каталог</a>
+    <section class="page-header page-header-studio page-header-studio-detail">
+        <div class="container page-header-grid">
+            <div class="page-header-copy" data-reveal="up">
+                <span class="section-kicker">Детали проекта</span>
+                <h1>Разбираем проект до уровня материалов, сценариев и архитектурной логики.</h1>
+                <p>Ниже — структура конкретного проекта: визуальный образ, ключевые решения и основные характеристики объекта.</p>
             </div>
-
-            <div class="property-grid">
-                <div class="property-gallery">
-                    <a id="mainImageLink" class="main-image" href="assets/image/main.jpg" target="_blank" rel="noopener" aria-label="Открыть изображение в большом размере">
-                        <img id="mainImage" src="assets/image/main.jpg" alt="Фото дома" />
-                    </a>
-                    <div class="gallery-thumbs" id="galleryThumbs">
-                        <img class="thumb" src="assets/image/main.jpg" alt="Миниатюра дома 1" />
-                        <img class="thumb" src="assets/image/main.jpg" alt="Миниатюра дома 2" />
-                        <img class="thumb" src="assets/image/main.jpg" alt="Миниатюра дома 3" />
-                    </div>
-                </div>
-
-                <div class="property-sidebar">
-                    <div id="propertyContent">
-                        <!-- Контент подгружается JavaScript -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-section">
-                <h2>Описание</h2>
-                <p id="fullDescription">
-                    Загружается...
-                </p>
-            </div>
-
-            <div class="property-section">
-                <h2>Удобства</h2>
-                <div class="amenities-grid" id="amenities">
-                    <!-- Контент подгружается JavaScript -->
-                </div>
-            </div>
-
-            <div class="property-section">
-                <h2>Информация</h2>
-                <div class="info-grid" id="infoGrid">
-                    <!-- Контент подгружается JavaScript -->
-                </div>
-            </div>
+            <article class="page-header-note" data-reveal="up" data-delay="120">
+                <span class="hero-note-label">Раздел</span>
+                <strong>Паспорт проекта</strong>
+                <p>Эта страница показывает, как выглядит проект внутри: не только картинка, но и его функциональная основа.</p>
+            </article>
         </div>
     </section>
 
-    <!-- Футер -->
-    <footer class="footer">
+    <section class="property-detail interior-page-section">
         <div class="container">
-            <p>&copy; 2026 Caspian Villas. Все права защищены.</p>
+            <div class="back-link" data-reveal="up"><a href="catalog.html">← Назад к проектам</a></div>
+            <div class="property-grid" data-reveal="up" data-delay="80">
+                <div class="property-gallery">
+                    <a id="mainImageLink" class="main-image" href="assets/image/main.jpg" target="_blank" rel="noopener" aria-label="Открыть изображение в большом размере">
+                        <img id="mainImage" src="assets/image/main.jpg" alt="Фото проекта" />
+                    </a>
+                    <div class="gallery-thumbs" id="galleryThumbs"></div>
+                </div>
+                <div class="property-sidebar"><div id="propertyContent"></div></div>
+            </div>
+            <div class="property-section" data-reveal="up"><h2>Описание</h2><p id="fullDescription">Загружается...</p></div>
+            <div class="property-section" data-reveal="up"><h2>Ключевые элементы</h2><div class="amenities-grid" id="amenities"></div></div>
+            <div class="property-section" data-reveal="up"><h2>Информация</h2><div class="info-grid" id="infoGrid"></div></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div><h3>APK Studio</h3><p>Архитектурный дизайн интерьеров и частных домов</p></div>
+            <div><p><a href="about.html">О студии</a></p><p><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p><p><a href="tel:+79896668777">+7 989 666 8777</a></p></div>
         </div>
     </footer>
 
@@ -90,6 +74,7 @@
         <img id="lightboxImage" src="" alt="" />
         <button class="lightbox-nav next" id="lightboxNext" aria-label="Следующее изображение">›</button>
     </div>
+
     <script src="js/script.js"></script>
     <script src="js/property.js"></script>
 </body>

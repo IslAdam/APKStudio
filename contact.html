@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты - APK Studio</title>
+    <title>Заявка - APK Studio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,55 +19,67 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="catalog.html" class="nav-link">Портфолио</a></li>
-                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="catalog.html" class="nav-link">Проекты</a></li>
+                <li><a href="index.html#services" class="nav-link">Услуги</a></li>
                 <li><a href="employees.html" class="nav-link">Сотрудники</a></li>
+                <li><a href="index.html#contacts" class="nav-link">Контакты</a></li>
                 <li><a href="contact.html" class="nav-link">Заявка</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Оставить заявку</h1>
-            <p>Подготовим индивидуальное предложение по вашему проекту</p>
+    <section class="page-header page-header-studio">
+        <div class="container page-header-grid">
+            <div class="page-header-copy" data-reveal="up">
+                <span class="section-kicker">Заявка</span>
+                <h1>Подготовим индивидуальное предложение под ваш объект и формат работы.</h1>
+                <p>Оставьте контактные данные и краткое описание проекта — так нам будет проще сразу понять задачу и предложить подходящий сценарий сотрудничества.</p>
+            </div>
+            <article class="page-header-note" data-reveal="up" data-delay="120">
+                <span class="hero-note-label">Важно</span>
+                <strong>Форма пока не подключена</strong>
+                <p>На этом этапе страница оформлена визуально. Отправку данных подключим позже, когда вы скажете.</p>
+            </article>
         </div>
     </section>
 
-    <section class="about-content">
+    <section class="about-content interior-page-section">
         <div class="container">
-            <div class="property-grid contact-layout">
-                <div class="property-section">
-                    <h2>Контакты</h2>
-                    <p><strong>Email:</strong> <a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p>
-                    <p><strong>Телефон:</strong> <a href="tel:+79896668777">+7 989 666 8777</a></p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/message/YE4LWTNWH3J5M1" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a></p>
-                    <p><strong>Instagram:</strong> <a href="https://instagram.com/apk_zone" target="_blank" rel="noopener noreferrer">@apk_zone</a></p>
-                </div>
-                <div class="property-section">
-                    <h2>Форма заявки</h2>
+            <div class="contact-layout contact-layout-studio">
+                <article class="property-section page-panel" data-reveal="up">
+                    <div class="section-heading section-heading-compact">
+                        <span class="section-kicker">Контакты</span>
+                        <h2>Связаться со студией</h2>
+                    </div>
+                    <div class="contact-links-studio">
+                        <div class="contact-link-card"><span>Email</span><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></div>
+                        <div class="contact-link-card"><span>Телефон</span><a href="tel:+79896668777">+7 989 666 8777</a></div>
+                        <div class="contact-link-card"><span>WhatsApp</span><a href="https://wa.me/message/YE4LWTNWH3J5M1" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a></div>
+                        <div class="contact-link-card"><span>Instagram</span><a href="https://instagram.com/apk_zone" target="_blank" rel="noopener noreferrer">@apk_zone</a></div>
+                    </div>
+                </article>
+
+                <article class="property-section page-panel page-panel-accent" data-reveal="up" data-delay="100">
+                    <div class="section-heading section-heading-compact">
+                        <span class="section-kicker">Форма заявки</span>
+                        <h2>Опишите ваш проект</h2>
+                    </div>
                     <form class="contact-form">
                         <input type="text" class="contact-input" placeholder="Ваше имя" />
                         <input type="email" class="contact-input" placeholder="Email" />
                         <input type="tel" class="contact-input" placeholder="Телефон" />
-                        <textarea class="contact-input" placeholder="Кратко о проекте" rows="5"></textarea>
+                        <textarea class="contact-input" placeholder="Кратко о проекте" rows="6"></textarea>
                         <button type="button" class="btn btn-primary">Отправить заявку</button>
                     </form>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container footer-content">
-            <div>
-                <h3>APK Studio</h3>
-                <p>Архитектурный дизайн интерьеров и частных домов</p>
-            </div>
-            <div>
-                <p><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p>
-                <p><a href="tel:+79896668777">+7 989 666 8777</a></p>
-            </div>
+            <div><h3>APK Studio</h3><p>Архитектурный дизайн интерьеров и частных домов</p></div>
+            <div><p><a href="about.html">О студии</a></p><p><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p><p><a href="tel:+79896668777">+7 989 666 8777</a></p></div>
         </div>
     </footer>
 

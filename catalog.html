@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Навигация -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
@@ -20,80 +19,79 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="catalog.html" class="nav-link">Портфолио</a></li>
+                <li><a href="catalog.html" class="nav-link">Проекты</a></li>
                 <li><a href="index.html#services" class="nav-link">Услуги</a></li>
                 <li><a href="employees.html" class="nav-link">Сотрудники</a></li>
                 <li><a href="index.html#contacts" class="nav-link">Контакты</a></li>
+                <li><a href="contact.html" class="nav-link">Заявка</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Заголовок страницы -->
-        <section class="page-header">
-        <div class="container">
-            <h1>Портфолио проектов</h1>
-            <p>Набор реализованных решений в интерьере и архитектуре</p>
+    <section class="page-header page-header-studio">
+        <div class="container page-header-grid">
+            <div class="page-header-copy" data-reveal="up">
+                <span class="section-kicker">Портфолио</span>
+                <h1>Подборка проектов, в которых архитектура и интерьер работают как единое целое.</h1>
+                <p>Частные дома, квартиры и коммерческие пространства — с акцентом на пропорции, материал и функциональную строгость.</p>
+            </div>
+            <article class="page-header-note" data-reveal="up" data-delay="120">
+                <span class="hero-note-label">Формат</span>
+                <strong>Жилые и коммерческие объекты</strong>
+                <p>Каждый проект раскрывает разный сценарий пространства, но сохраняет единый профессиональный подход.</p>
+            </article>
         </div>
     </section>
 
-    <!-- Основной контент -->
-    <section class="catalog">
-        <div class="container">
-            <div class="properties-grid">
-                <div class="property-card">
-                    <div class="property-image" style="background: url('assets/image/main.jpg') center/cover;"></div>
-                    <div class="property-info">
-                        <h3><a href="#">Modern Classic</a></h3>
-                        <p class="location">⌖ Частный дом</p>
-                        <p class="description">Теплая архитектурная композиция с акцентом на интерьер и пространственный ритм.</p>
-                        <div class="property-details">
-                            <span>• 4 комнаты</span>
-                            <span>• 2 санузла</span>
-                            <span>• авторский проект</span>
-                        </div>
-                        <a href="#" class="btn btn-secondary">Подробнее</a>
-                    </div>
-                </div>
+    <section class="catalog interior-page-section">
+        <div class="container page-stack">
+            <div class="section-heading section-heading-compact" data-reveal="up">
+                <span class="section-kicker">Выбранные проекты</span>
+                <h2>Строгая композиция, ясный ритм и внимание к повседневному использованию.</h2>
+            </div>
 
-                <div class="property-card">
-                    <div class="property-image" style="background: url('assets/image/main.jpg') center/cover;"></div>
+            <div class="properties-grid properties-grid-studio">
+                <article class="property-card" data-reveal="up" data-delay="60">
+                    <div class="property-image" style="background: linear-gradient(180deg, rgba(8, 8, 8, 0.08), rgba(8, 8, 8, 0.58)), url('https://static.tildacdn.info/tild6231-6236-4263-a266-646135313033/WhatsApp_Image_2022-.jpeg') center/cover;"></div>
                     <div class="property-info">
-                        <h3><a href="#">Ethno Modern</a></h3>
-                        <p class="location">⌖ Квартира</p>
-                        <p class="description">Натуральные материалы, мягкий свет и современная отделка в единой концепции.</p>
-                        <div class="property-details">
-                            <span>• 3 комнаты</span>
-                            <span>• 1 кухня</span>
-                            <span>• визуализации</span>
-                        </div>
-                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                        <h3><a href="property.html?id=1">Modern Classic</a></h3>
+                        <p class="location">Частный дом / 240 м2</p>
+                        <p class="description">Сдержанная архитектурная композиция с теплыми материалами, высокой детализацией и собранным интерьерным ритмом.</p>
+                        <div class="property-details"><span>4 комнаты</span><span>2 санузла</span><span>Авторский надзор</span></div>
+                        <a href="property.html?id=1" class="btn btn-secondary">Смотреть проект</a>
                     </div>
-                </div>
-
-                <div class="property-card">
-                    <div class="property-image" style="background: url('assets/image/main.jpg') center/cover;"></div>
+                </article>
+                <article class="property-card" data-reveal="up" data-delay="140">
+                    <div class="property-image" style="background: linear-gradient(180deg, rgba(8, 8, 8, 0.14), rgba(8, 8, 8, 0.62)), url('https://static.tildacdn.info/tild6562-3661-4764-a238-653036633633/1_.jpg') center/cover;"></div>
                     <div class="property-info">
-                        <h3><a href="#">Minimalism</a></h3>
-                        <p class="location">⌖ Коммерческое помещение</p>
-                        <p class="description">Дизайн с чистыми линиями, продуманной навигацией и подчеркнутым стилем бренда.</p>
-                        <div class="property-details">
-                            <span>• 1 объект</span>
-                            <span>• под ключ</span>
-                            <span>• концепция</span>
-                        </div>
-                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                        <h3><a href="property.html?id=2">Ethno Modern</a></h3>
+                        <p class="location">Квартира / 118 м2</p>
+                        <p class="description">Современный интерьер с натуральными фактурами, мягким светом и точной работой с бытовыми сценариями.</p>
+                        <div class="property-details"><span>3 комнаты</span><span>Кухня-гостиная</span><span>Комплектация</span></div>
+                        <a href="property.html?id=2" class="btn btn-secondary">Смотреть проект</a>
                     </div>
-                </div>
+                </article>
+                <article class="property-card" data-reveal="up" data-delay="220">
+                    <div class="property-image" style="background: linear-gradient(180deg, rgba(8, 8, 8, 0.14), rgba(8, 8, 8, 0.62)), url('https://static.tildacdn.info/tild3566-3035-4964-a662-323965363738/2_.jpg') center/cover;"></div>
+                    <div class="property-info">
+                        <h3><a href="property.html?id=3">Minimalism</a></h3>
+                        <p class="location">Коммерческий интерьер</p>
+                        <p class="description">Лаконичная среда для бренда с чистыми линиями, грамотной навигацией и контролируемым визуальным напряжением.</p>
+                        <div class="property-details"><span>Под ключ</span><span>Концепция</span><span>Рабочая документация</span></div>
+                        <a href="property.html?id=3" class="btn btn-secondary">Смотреть проект</a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Футер -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 APK Studio. Все права защищены.</p>
+        <div class="container footer-content">
+            <div><h3>APK Studio</h3><p>Архитектурный дизайн интерьеров и частных домов</p></div>
+            <div><p><a href="about.html">О студии</a></p><p><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p><p><a href="tel:+79896668777">+7 989 666 8777</a></p></div>
         </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

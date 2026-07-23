@@ -1,94 +1,97 @@
-// Данные об объектах недвижимости
-const properties = {
+﻿const properties = {
     1: {
-        name: 'Винтаж',
-        location: 'За городом, 15 км',
-        price: 4500,
-        guests: 4,
-        bedrooms: 2,
-        bathrooms: 2,
-        images: ['assets/image/main.jpg', 'assets/image/main.jpg', 'assets/image/main.jpg'],
-        description: 'Красивый деревянный коттедж с камином и террасой. Идеально для семьи. Коттедж расположен в тихом лесном массиве, вдали от суеты города. Он идеален для семейного отдыха, медового месяца или корпоративного мероприятия.',
-        amenities: ['Камин', 'Терраса', 'Кухня', 'WiFi', 'Парковка', 'Лесной участок', 'Уличное освещение', 'Барбекю'],
+        name: 'Modern Classic',
+        location: 'Частный дом / 240 м2',
+        area: '240 м2',
+        style: 'Modern Classic',
+        stage: 'Под ключ',
+        images: [
+            'https://static.tildacdn.info/tild6231-6236-4263-a266-646135313033/WhatsApp_Image_2022-.jpeg',
+            'https://static.tildacdn.info/tild6562-3661-4764-a238-653036633633/1_.jpg',
+            'https://static.tildacdn.info/tild3566-3035-4964-a662-323965363738/2_.jpg'
+        ],
+        description: 'Проект частного дома, собранный на контрасте строгой архитектурной логики и теплой интерьерной атмосферы. Пространство выстроено вокруг ясных осей, комфортных маршрутов и спокойной палитры материалов.',
+        amenities: ['Парадная гостиная', 'Кухня-остров', 'Мастер-спальня', 'Система хранения', 'Световой сценарий', 'Авторский надзор'],
         info: {
-            'Минимальный срок': '1 ночь',
-            'Приём гостей': 'Весь год',
+            'Тип объекта': 'Частный дом',
+            'Площадь': '240 м2',
+            'Формат работы': 'Концепция, документация, сопровождение',
+            'Основной акцент': 'Классическая симметрия и современная функциональность'
         }
     },
     2: {
-        name: 'Классика',
-        location: 'Центр города, 3 км',
-        price: 3200,
-        guests: 2,
-        bedrooms: 1,
-        bathrooms: 1,
-        images: ['assets/image/main.jpg', 'assets/image/main.jpg', 'assets/image/main.jpg'],
-        description: 'Современный апартамент с панорамными окнами и современным интерьером. Расположен в самом центре города, рядом со всеми достопримечательностями, ресторанами и магазинами. Идеален для деловых поездок и городского отдыха.',
-        amenities: ['Кондиционер', 'Холодильник', 'Микроволновка', 'Телевизор', 'WiFi', 'Интернет', 'Барбекю'],
+        name: 'Ethno Modern',
+        location: 'Квартира / 118 м2',
+        area: '118 м2',
+        style: 'Ethno Modern',
+        stage: 'Комплектация',
+        images: [
+            'https://static.tildacdn.info/tild6562-3661-4764-a238-653036633633/1_.jpg',
+            'https://static.tildacdn.info/tild6331-3139-4466-b830-663437643538/5_.jpg',
+            'https://static.tildacdn.info/tild6262-3761-4330-b637-616134323233/3_.jpg'
+        ],
+        description: 'Интерьер квартиры, построенный на сочетании современной геометрии и натуральных фактур. Пространство остается визуально спокойным, но при этом насыщенным за счет света, дерева, текстиля и точной ритмики деталей.',
+        amenities: ['Кухня-гостиная', 'Натуральное дерево', 'Мягкий свет', 'Скрытое хранение', 'Локальные акценты', 'Подбор материалов'],
         info: {
-            'Минимальный срок': '1 ночь',
-            'Приём гостей': 'Весь год',
+            'Тип объекта': 'Квартира',
+            'Площадь': '118 м2',
+            'Формат работы': 'Дизайн-проект и комплектация',
+            'Основной акцент': 'Тактильные материалы и жилая функциональность'
         }
     },
     3: {
-        name: 'Минимализм',
-        location: 'Озерный край, 45 км',
-        price: 8900,
-        guests: 6,
-        bedrooms: 3,
-        bathrooms: 3,
-        images: ['assets/image/main.jpg', 'assets/image/main.jpg', 'assets/image/main.jpg'],
-        description: 'Роскошная вилла с собственным пляжем, джакузи и прекрасным видом на озеро. Эта элегантная вилла предоставляет все необходимое для идеального отдыха. Жилая площадь 200 м², территория 500 м². Вилла оснащена всем необходимым для комфортного проживания большой семьи или группы друзей.',
-        amenities: ['Джакузи', 'Сауна', 'WiFi', 'Климат-контроль', 'Собственный пляж', 'Терраса', 'Барбекю'],
+        name: 'Minimalism',
+        location: 'Коммерческий интерьер',
+        area: 'Коммерческий объект',
+        style: 'Minimalism',
+        stage: 'Рабочая документация',
+        images: [
+            'https://static.tildacdn.info/tild3566-3035-4964-a662-323965363738/2_.jpg',
+            'https://static.tildacdn.info/tild3736-3031-4735-b939-643762316464/4_.jpg',
+            'https://static.tildacdn.info/tild6331-3139-4466-b830-663437643538/5_.jpg'
+        ],
+        description: 'Коммерческое пространство с минималистичной подачей, где каждая линия подчинена навигации, образу бренда и чистому пользовательскому опыту. Основной акцент сделан на визуальной строгости и практичности среды.',
+        amenities: ['Навигационная логика', 'Чистая геометрия', 'Бренд-среда', 'Сценарный свет', 'Зонирование', 'Коммерческая подача'],
         info: {
-            'Минимальный срок': '2 ночи',
-            'Приём гостей': 'Весь год',
+            'Тип объекта': 'Коммерческий интерьер',
+            'Площадь': 'Индивидуально',
+            'Формат работы': 'Концепция и рабочая документация',
+            'Основной акцент': 'Минималистичный образ и удобная эксплуатация'
         }
     }
 };
 
-// Получить ID из URL
 function getPropertyId() {
     const params = new URLSearchParams(window.location.search);
     return params.get('id');
 }
 
-// Загрузить информацию о свойстве
 function loadPropertyInfo() {
     const propertyId = getPropertyId();
     const property = properties[propertyId];
 
     if (!property) {
-        document.getElementById('propertyContent').innerHTML = '<p>Объект не найден</p>';
+        document.getElementById('propertyContent').innerHTML = '<p>Проект не найден</p>';
+        document.getElementById('fullDescription').textContent = 'Информация по проекту недоступна.';
         return;
     }
 
-    // Установить основную информацию
-    document.title = property.name + ' - Caspian Villas';
+    document.title = property.name + ' - APK Studio';
 
     const content = `
         <h2>${property.name}</h2>
         <p class="location property-location">${property.location}</p>
-        
         <div class="property-details" style="margin-bottom: 1.5rem;">
-            <span>• ${property.guests} гостей</span>
-            <span>• ${property.bedrooms} спальни</span>
-            <span>• ${property.bathrooms} ванные</span>
+            <span>${property.area}</span>
+            <span>${property.style}</span>
+            <span>${property.stage}</span>
         </div>
-
-        <div class="price-section" style="margin-bottom: 2rem;">
-            <div style="display: flex; align-items: baseline; gap: 0.5rem;">
-                <span class="price">${property.price.toLocaleString()} ₽</span>
-                <span class="per-night">за ночь</span>
-            </div>
-        </div>
-
-        <button class="btn btn-secondary" onclick="window.open('https://forms.yandex.ru/u/6a5a3840068ff06d92fe2f1a', '_blank', 'noopener')">Забронировать</button>
+        <button class="btn btn-secondary" onclick="window.location.href='contact.html'">Обсудить похожий проект</button>
     `;
 
     document.getElementById('propertyContent').innerHTML = content;
 
-    const imageUrls = property.images || ['assets/image/main.jpg'];
+    const imageUrls = property.images;
     const mainImage = document.getElementById('mainImage');
     const mainImageLink = document.getElementById('mainImageLink');
     const galleryThumbs = document.getElementById('galleryThumbs');
@@ -128,16 +131,14 @@ function loadPropertyInfo() {
     mainImage.alt = property.name;
     mainImageLink.href = imageUrls[0];
 
-    galleryThumbs.innerHTML = imageUrls.map((src, index) => 
-        `<img class="thumb" src="${src}" alt="Миниатюра ${index + 1} - ${property.name}" data-src="${src}" />`
-    ).join('');
+    galleryThumbs.innerHTML = imageUrls.map((src, index) => `<img class="thumb" src="${src}" alt="Миниатюра ${index + 1} - ${property.name}" data-src="${src}" />`).join('');
 
     galleryThumbs.querySelectorAll('.thumb').forEach((thumb, index) => {
         thumb.addEventListener('click', () => {
             const selectedSrc = thumb.dataset.src;
             mainImage.src = selectedSrc;
             mainImageLink.href = selectedSrc;
-            openLightbox(index);
+            currentImageIndex = index;
         });
     });
 
@@ -177,26 +178,16 @@ function loadPropertyInfo() {
         }
     });
 
-    // Установить описание
     document.getElementById('fullDescription').textContent = property.description;
-
-    // Загрузить удобства
-    const amenitiesHtml = property.amenities.map(amenity => 
-        `<div class="amenity">${amenity}</div>`
-    ).join('');
-    document.getElementById('amenities').innerHTML = amenitiesHtml;
-
-    // Загрузить информацию
-    const infoHtml = Object.entries(property.info).map(([key, value]) => 
-        `<div class="info-item">
+    document.getElementById('amenities').innerHTML = property.amenities.map((amenity) => `<div class="amenity">${amenity}</div>`).join('');
+    document.getElementById('infoGrid').innerHTML = Object.entries(property.info).map(([key, value]) => `
+        <div class="info-item">
             <strong>${key}</strong>
             ${value}
-        </div>`
-    ).join('');
-    document.getElementById('infoGrid').innerHTML = infoHtml;
+        </div>
+    `).join('');
 }
 
-// Загрузить информацию при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
     loadPropertyInfo();
 });
