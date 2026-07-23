@@ -1,7 +1,7 @@
-/* ===== ОБЩИЕ СТИЛИ ===== */
+﻿/* ===== РћР‘Р©РР• РЎРўРР›Р ===== */
 @font-face {
-    font-family: 'Occidental Rus';
-    src: url('../fonts/occidentalrusbyme.otf') format('opentype');
+    font-family: 'Foglihten';
+    src: url('../fonts/Foglihten-068.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     line-height: 1.6;
     color: #F8F8F6;
     background: linear-gradient(135deg, #1D1F22 0%, #232528 50%, #1D1F22 100%);
@@ -37,7 +37,7 @@ a {
     padding: 0 1.5rem;
 }
 
-/* ===== НАВИГАЦИЯ ===== */
+/* ===== РќРђР’РР“РђР¦РРЇ ===== */
 .navbar {
     background: rgba(29, 31, 34, 0.95);
     backdrop-filter: blur(10px);
@@ -63,7 +63,7 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: all 0.3s ease;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -123,7 +123,7 @@ a {
     width: 25px;
     height: 3px;
     background-color: #F8F8F6;
-    border-radius: 2px;
+    border-radius: 0;
     transition: 0.3s ease;
 }
 
@@ -139,7 +139,7 @@ a {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* ===== ГЕРОЙ СЕКЦИЯ ===== */
+/* ===== Р“Р•Р РћР™ РЎР•РљР¦РРЇ ===== */
 .hero {
     background: url('../assets/image/main.jpg') center/cover;
     background-attachment: fixed;
@@ -182,11 +182,11 @@ a {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== КНОПКИ ===== */
+/* ===== РљРќРћРџРљР ===== */
 .btn {
     display: inline-block;
     padding: 0.9rem 2.2rem;
-    border-radius: 50px;
+    border-radius: 0;
     font-weight: 600;
     transition: all 0.3s ease;
     border: none;
@@ -220,7 +220,7 @@ a {
     box-shadow: 0 15px 40px rgba(236, 234, 230, 0.24);
 }
 
-/* ===== РАЗДЕЛЫ ===== */
+/* ===== Р РђР—Р”Р•Р›Р« ===== */
 section {
     padding: 4rem 0;
 }
@@ -238,7 +238,7 @@ section h2 {
     color: #F8F8F6;
     margin-bottom: 3rem;
     text-align: left;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     letter-spacing: 1px;
     position: relative;
     padding-bottom: 1.5rem;
@@ -253,10 +253,10 @@ section h2::after {
     width: 60px;
     height: 3px;
     background: linear-gradient(90deg, #ECEAE6 0%, #F8F8F6 100%);
-    border-radius: 2px;
+    border-radius: 0;
 }
 
-/* ===== КАРТОЧКИ ОБЪЕКТОВ ===== */
+/* ===== РљРђР РўРћР§РљР РћР‘РЄР•РљРўРћР’ ===== */
 .properties-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -304,7 +304,7 @@ section h2::after {
 
 .property-info h3 {
     margin-bottom: 0.8rem;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     font-size: 1.4rem;
 }
 
@@ -365,7 +365,7 @@ section h2::after {
     font-size: 0.85rem;
 }
 
-/* ===== СЕКЦИЯ ПРЕИМУЩЕСТВ ===== */
+/* ===== РЎР•РљР¦РРЇ РџР Р•РРњРЈР©Р•РЎРўР’ ===== */
 .advantages {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(236, 234, 230, 0.05) 100%);
     backdrop-filter: blur(10px);
@@ -420,7 +420,7 @@ section h2::after {
 .advantage-card h3 {
     margin-bottom: 0.8rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     font-size: 1.3rem;
 }
 
@@ -430,7 +430,7 @@ section h2::after {
     line-height: 1.7;
 }
 
-/* ===== СТРАНИЦА КАТАЛОГА ===== */
+/* ===== РЎРўР РђРќРР¦Рђ РљРђРўРђР›РћР“Рђ ===== */
 .page-header {
     background: linear-gradient(135deg, rgba(248, 248, 246, 0.12) 0%, rgba(236, 234, 230, 0.05) 100%),
                 url('../assets/image/main.jpg') center/cover;
@@ -452,7 +452,7 @@ section h2::after {
 .page-header h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     letter-spacing: 1px;
     position: relative;
     z-index: 1;
@@ -470,7 +470,7 @@ section h2::after {
     background-attachment: fixed;
 }
 
-/* ===== СТРАНИЦА ДОМИКА ===== */
+/* ===== РЎРўР РђРќРР¦Рђ Р”РћРњРРљРђ ===== */
 .back-link {
     margin-bottom: 2rem;
 }
@@ -616,7 +616,7 @@ section h2::after {
     transform: translateY(-50%);
     width: 3rem;
     height: 3rem;
-    border-radius: 50%;
+    border-radius: 0;
     border: 1px solid rgba(236, 234, 230, 0.2);
     background: rgba(29, 31, 34, 0.75);
     color: #F8F8F6;
@@ -649,7 +649,7 @@ section h2::after {
     text-align: left;
     margin-bottom: 1rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
 }
 
 .property-sidebar .property-details {
@@ -676,7 +676,7 @@ section h2::after {
 .property-section h2 {
     margin-bottom: 1.5rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
 }
 
 .amenities-grid {
@@ -719,7 +719,7 @@ section h2::after {
     color: #ECEAE6;
 }
 
-/* ===== СТРАНИЦА О НАС ===== */
+/* ===== РЎРўР РђРќРР¦Рђ Рћ РќРђРЎ ===== */
 .about-content {
     background: linear-gradient(135deg, #1D1F22 0%, #232528 50%, #1D1F22 100%);
     background-attachment: fixed;
@@ -736,7 +736,7 @@ section h2::after {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -811,7 +811,7 @@ section h2::after {
     height: 60px;
     background: linear-gradient(135deg, #ECEAE6 0%, #F8F8F6 100%);
     color: #1D1F22;
-    border-radius: 50%;
+    border-radius: 0;
     align-items: center;
     justify-content: center;
     font-weight: 700;
@@ -823,7 +823,7 @@ section h2::after {
 .step h3 {
     margin-bottom: 0.8rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
 }
 
 .step p {
@@ -846,7 +846,7 @@ section h2::after {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -863,7 +863,7 @@ section h2::after {
     font-size: 1.05rem;
 }
 
-/* ===== КОНТАКТЫ ===== */
+/* ===== РљРћРќРўРђРљРўР« ===== */
 .contacts {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(236, 234, 230, 0.05) 100%);
     backdrop-filter: blur(10px);
@@ -925,7 +925,7 @@ section h2::after {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2.5rem;
     margin-top: 2rem;
-    justify-items: center; /* центрируем плитки внутри сетки */
+    justify-items: center; /* С†РµРЅС‚СЂРёСЂСѓРµРј РїР»РёС‚РєРё РІРЅСѓС‚СЂРё СЃРµС‚РєРё */
     align-items: stretch;
 }
 
@@ -939,20 +939,20 @@ section h2::after {
     border: 1px solid rgba(236, 234, 230, 0.18);
     transition: all 0.3s ease;
     width: 100%;
-    max-width: 360px; /* единая максимальная ширина плитки */
+    max-width: 360px; /* РµРґРёРЅР°СЏ РјР°РєСЃРёРјР°Р»СЊРЅР°СЏ С€РёСЂРёРЅР° РїР»РёС‚РєРё */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* центрируем содержимое по горизонтали */
+    align-items: center; /* С†РµРЅС‚СЂРёСЂСѓРµРј СЃРѕРґРµСЂР¶РёРјРѕРµ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё */
 }
 
-/* Адрес выделяем шире на больших экранах */
+/* РђРґСЂРµСЃ РІС‹РґРµР»СЏРµРј С€РёСЂРµ РЅР° Р±РѕР»СЊС€РёС… СЌРєСЂР°РЅР°С… */
 .contacts-grid .contact-item.address {
-    /* Занимает всю ширину сетки, но ограничена max-width и центрируется */
+    /* Р—Р°РЅРёРјР°РµС‚ РІСЃСЋ С€РёСЂРёРЅСѓ СЃРµС‚РєРё, РЅРѕ РѕРіСЂР°РЅРёС‡РµРЅР° max-width Рё С†РµРЅС‚СЂРёСЂСѓРµС‚СЃСЏ */
     grid-column: 1 / -1;
     justify-self: center;
     max-width: 760px;
-    text-align: center; /* текст адреса по центру */
+    text-align: center; /* С‚РµРєСЃС‚ Р°РґСЂРµСЃР° РїРѕ С†РµРЅС‚СЂСѓ */
 }
 
 .contacts-grid .contact-item.address p {
@@ -963,7 +963,7 @@ section h2::after {
 
 @media (max-width: 900px) {
     .contacts-grid .contact-item.address {
-        grid-column: 1 / -1; /* на узких экранах также занимает всю ширину, остаётся центрированной */
+        grid-column: 1 / -1; /* РЅР° СѓР·РєРёС… СЌРєСЂР°РЅР°С… С‚Р°РєР¶Рµ Р·Р°РЅРёРјР°РµС‚ РІСЃСЋ С€РёСЂРёРЅСѓ, РѕСЃС‚Р°С‘С‚СЃСЏ С†РµРЅС‚СЂРёСЂРѕРІР°РЅРЅРѕР№ */
         max-width: 100%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -979,7 +979,7 @@ section h2::after {
     margin-bottom: 1.2rem;
     font-size: 1.3rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
 }
 
 .contact-item a {
@@ -993,7 +993,7 @@ section h2::after {
     text-shadow: 0 0 10px rgba(236, 234, 230, 0.24);
 }
 
-/* ===== ФУТЕР ===== */
+/* ===== Р¤РЈРўР•Р  ===== */
 .footer {
     background: linear-gradient(135deg, rgba(29, 31, 34, 0.95) 0%, rgba(36, 38, 41, 0.95) 100%);
     backdrop-filter: blur(10px);
@@ -1017,7 +1017,7 @@ section h2::after {
 .footer h3 {
     margin-bottom: 0.5rem;
     color: #F8F8F6;
-    font-family: 'Occidental Rus', sans-serif;
+    font-family: 'Foglihten', sans-serif;
 }
 
 .footer p {
@@ -1034,7 +1034,7 @@ section h2::after {
     color: #F8F8F6;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
+/* ===== РђР”РђРџРўРР’РќРћРЎРўР¬ ===== */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -1154,30 +1154,34 @@ section h2::after {
     }
 }
 
-/* ===== ТЕМА APK: ОБНОВЛЕННАЯ ПАЛИТРА И СТИЛЬ ===== */
+/* ===== РўР•РњРђ APK: РћР‘РќРћР’Р›Р•РќРќРђРЇ РџРђР›РРўР Рђ Р РЎРўРР›Р¬ ===== */
 :root {
-    --bg-primary: #121314;
-    --bg-secondary: #1a1c1d;
+    --bg-primary: #050505;
+    --bg-secondary: #111111;
     --surface: rgba(255, 255, 255, 0.05);
     --surface-strong: rgba(255, 255, 255, 0.08);
     --stroke: rgba(255, 255, 255, 0.16);
-    --text-primary: #f4efe7;
-    --text-secondary: #ddd2c4;
-    --accent: #ccb091;
-    --accent-strong: #e2c3a0;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.78);
+    --accent: #5A221A;
+    --accent-strong: #743128;
     --shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.28);
-    --radius-lg: 18px;
-    --radius-md: 14px;
+    --radius-lg: 0;
+    --radius-md: 0;
 }
 
 body {
     color: var(--text-primary);
-    background: linear-gradient(160deg, var(--bg-primary) 0%, #171819 42%, var(--bg-secondary) 100%);
+    background: linear-gradient(160deg, var(--bg-primary) 0%, #0b0b0b 42%, var(--bg-secondary) 100%);
+}
+
+.container {
+    max-width: 1460px;
 }
 
 .navbar,
 .nav-menu {
-    background: rgba(18, 19, 20, 0.9);
+    background: rgba(5, 5, 5, 0.92);
     border-color: var(--stroke);
 }
 
@@ -1219,7 +1223,7 @@ section h2::after {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
-    color: #1b1917;
+    color: #ffffff;
     box-shadow: var(--shadow-soft);
 }
 
@@ -1232,12 +1236,12 @@ section h2::after {
 .catalog,
 .about-content,
 .property-detail {
-    background: linear-gradient(160deg, var(--bg-primary) 0%, #181a1b 50%, var(--bg-secondary) 100%);
+    background: linear-gradient(160deg, var(--bg-primary) 0%, #0d0d0d 50%, var(--bg-secondary) 100%);
 }
 
 .advantages,
 .contacts {
-    background: linear-gradient(160deg, rgba(255, 255, 255, 0.06) 0%, rgba(204, 176, 145, 0.05) 100%);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.05) 0%, rgba(90, 34, 26, 0.12) 100%);
     border-top-color: var(--stroke);
     border-bottom-color: var(--stroke);
 }
@@ -1321,13 +1325,13 @@ section h2::after {
 }
 
 .contact-input::placeholder {
-    color: rgba(244, 239, 231, 0.68);
+    color: rgba(255, 255, 255, 0.68);
 }
 
 .contact-input:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(204, 176, 145, 0.2);
+    box-shadow: 0 0 0 3px rgba(90, 34, 26, 0.32);
 }
 
 textarea.contact-input {
@@ -1342,5 +1346,864 @@ textarea.contact-input {
 @media (max-width: 900px) {
     .contact-layout {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Р“Р›РђР’РќРђРЇ: РђР РҐРРўР•РљРўРЈР РќРђРЇ РљРћРњРџРћР—РР¦РРЇ ===== */
+.home-section {
+    padding: 8.75rem 0;
+}
+
+.home-section h2,
+.home-hero h1 {
+    font-family: 'Foglihten', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.home-section h2 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    line-height: 1.06;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.home-section h2::after {
+    display: none;
+}
+
+.home-section p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.section-kicker,
+.hero-kicker,
+.hero-note-label,
+.project-meta,
+.service-preview-label,
+.contacts-map-label {
+    display: inline-block;
+    font-size: 0.92rem;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.section-heading,
+.studio-story,
+.contacts-composition {
+    display: grid;
+    gap: 2rem;
+}
+
+.section-heading {
+    max-width: 980px;
+    margin-bottom: 3rem;
+}
+
+.section-heading p,
+.services-copy p {
+    max-width: 620px;
+    color: var(--text-secondary);
+}
+
+.home-hero {
+    min-height: calc(100vh - 70px);
+    padding: 6rem 0 4rem;
+    background:
+        radial-gradient(circle at top right, rgba(90, 34, 26, 0.32), transparent 30%),
+        linear-gradient(160deg, rgba(11, 12, 13, 0.74), rgba(11, 12, 13, 0.48)),
+        url('https://static.tildacdn.info/tild6231-6236-4263-a266-646135313033/WhatsApp_Image_2022-.jpeg') center/cover;
+}
+
+.home-hero::before {
+    background: linear-gradient(90deg, rgba(11, 12, 13, 0.88) 0%, rgba(11, 12, 13, 0.58) 45%, rgba(11, 12, 13, 0.35) 100%);
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: 3rem;
+    align-items: end;
+}
+
+.home-hero .hero-content {
+    max-width: 780px;
+    text-align: left;
+}
+
+.home-hero h1 {
+    font-size: clamp(3.5rem, 7vw, 6.1rem);
+    line-height: 0.95;
+    margin: 1rem 0 1.75rem;
+    max-width: 10ch;
+    text-wrap: balance;
+}
+
+.home-hero .hero-content p {
+    max-width: 620px;
+    font-size: 1.22rem;
+    color: rgba(255, 255, 255, 0.86);
+    margin-bottom: 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hero-actions .btn {
+    min-width: 220px;
+}
+
+.hero-aside {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.hero-visual {
+    border-radius: var(--radius-lg);
+    min-height: 260px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-soft);
+}
+
+.hero-visual-large {
+    grid-column: 1 / -1;
+    min-height: 520px;
+}
+
+.hero-note {
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    background: rgba(20, 21, 22, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.hero-note strong {
+    display: block;
+    font-size: 1.35rem;
+    line-height: 1.2;
+    margin: 0.6rem 0 0.8rem;
+}
+
+.hero-note p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.hero-note-accent {
+    background: linear-gradient(160deg, rgba(90, 34, 26, 0.34), rgba(255, 255, 255, 0.04));
+}
+
+.home-benefits {
+    background: transparent;
+}
+
+.architect-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.architect-card {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.2);
+}
+
+.architect-card:hover {
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(90, 34, 26, 0.58);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.24);
+}
+
+.architect-card-large {
+    grid-row: span 2;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 6rem;
+}
+
+.architect-card-offset {
+    transform: translateY(2.2rem);
+}
+
+.architect-card-shift {
+    transform: translateY(-1rem);
+}
+
+.architect-card .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 0 1.5rem;
+    color: var(--accent);
+}
+
+.architect-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.architect-card p {
+    color: var(--text-secondary);
+}
+
+.home-projects {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+}
+
+.projects-mosaic {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 1.5rem;
+    grid-auto-rows: minmax(250px, 1fr);
+}
+
+.project-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 320px;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
+    filter: saturate(1.05);
+}
+
+.project-tile strong {
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1;
+}
+
+.project-tile-featured {
+    min-height: 560px;
+    grid-row: span 2;
+}
+
+.project-tile-tall {
+    min-height: 280px;
+}
+
+.home-services {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.services-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.services-stage {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.9fr);
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.5rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+.service-item:hover,
+.service-item:focus-visible,
+.service-item.is-active {
+    transform: scale(1.03);
+    color: var(--accent-strong);
+    border-color: rgba(90, 34, 26, 0.68);
+    outline: none;
+}
+
+.service-number {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.52);
+    padding-top: 0.2rem;
+}
+
+.service-copy {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.service-copy strong {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1;
+    font-weight: 400;
+}
+
+.service-copy span {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.service-preview {
+    position: relative;
+    min-height: 520px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background-image:
+        linear-gradient(180deg, rgba(8, 8, 8, 0.16), rgba(8, 8, 8, 0.62)),
+        url('https://static.tildacdn.info/tild6262-3761-4330-b637-616134323233/3_.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow-soft);
+    transition: background-image 0.4s ease, transform 0.4s ease;
+}
+
+.service-preview-inner {
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.service-preview-title {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.service-preview-text {
+    max-width: 26rem;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.studio-story {
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: start;
+    margin-bottom: 2.5rem;
+}
+
+.studio-story-copy {
+    display: grid;
+    gap: 2rem;
+    max-width: 700px;
+}
+
+.studio-story-image {
+    min-height: 640px;
+    border-radius: var(--radius-lg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.home-contacts {
+    padding-bottom: 9.5rem;
+}
+
+.contacts-composition {
+    grid-template-columns: 1fr 0.92fr;
+    align-items: stretch;
+    margin-bottom: 2.5rem;
+}
+
+.contacts-panel,
+.contacts-map {
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--shadow-soft);
+}
+
+.contacts-panel {
+    padding: 2.5rem;
+}
+
+.contacts-list {
+    display: grid;
+    gap: 1.3rem;
+    margin-top: 2rem;
+}
+
+.contact-line {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.contact-line span {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.contact-line a {
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+    line-height: 1.25;
+    transition: color 0.4s ease;
+}
+
+.contact-line a:hover {
+    color: var(--accent-strong);
+}
+
+.contacts-map {
+    min-height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    background:
+        linear-gradient(180deg, rgba(8, 8, 8, 0.1), rgba(8, 8, 8, 0.68)),
+        url('https://static.tildacdn.info/tild3566-3035-4964-a662-323965363738/2_.jpg') center/cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contacts-map strong {
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.03;
+}
+
+.contacts-map p {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.contacts-map:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
+}
+
+.contact-wide-button {
+    display: block;
+    width: 100%;
+    padding: 1.35rem 2rem;
+    font-size: 1.08rem;
+    text-align: center;
+}
+
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease,
+        background-color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease,
+        filter 0.4s ease;
+}
+
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.architect-card-offset[data-reveal].is-visible {
+    transform: translateY(2.2rem);
+}
+
+.architect-card-shift[data-reveal].is-visible {
+    transform: translateY(-1rem);
+}
+
+.architect-card[data-reveal].is-visible:hover {
+    transform: scale(1.03);
+}
+
+.architect-card-offset[data-reveal].is-visible:hover {
+    transform: translateY(2.2rem) scale(1.03);
+}
+
+.architect-card-shift[data-reveal].is-visible:hover {
+    transform: translateY(-1rem) scale(1.03);
+}
+
+.project-tile[data-reveal].is-visible:hover,
+.contacts-map[data-reveal].is-visible:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 1180px) {
+    .hero-grid,
+    .services-layout,
+    .contacts-composition,
+    .studio-story {
+        grid-template-columns: 1fr;
+    }
+
+    .services-stage {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-aside {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-visual-large {
+        min-height: 420px;
+    }
+
+    .project-tile-featured {
+        min-height: 480px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-section {
+        padding: 6rem 0;
+    }
+
+    .architect-grid,
+    .projects-mosaic {
+        grid-template-columns: 1fr;
+    }
+
+    .architect-card-large,
+    .project-tile-featured {
+        grid-row: auto;
+        min-height: 420px;
+    }
+
+    .architect-card-offset,
+    .architect-card-shift {
+        transform: none;
+    }
+
+    .hero-aside {
+        grid-template-columns: 1fr;
+    }
+
+    .service-preview {
+        min-height: 420px;
+    }
+
+    .studio-story-image {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-hero {
+        padding-top: 4.5rem;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2.8rem, 12vw, 4.1rem);
+        max-width: 12ch;
+    }
+
+    .hero-actions .btn,
+    .contact-wide-button {
+        width: 100%;
+    }
+
+    .service-item {
+        grid-template-columns: 56px 1fr;
+    }
+
+    .service-copy strong {
+        font-size: 1.85rem;
+    }
+
+    .contacts-panel,
+    .contacts-map {
+        padding: 1.75rem;
+    }
+}
+
+/* ===== РЎРўР РђРќРР¦Рђ РЎРћРўР РЈР”РќРРљРћР’ ===== */
+.employee-highlights {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.employee-featured {
+    display: grid;
+    grid-template-columns: minmax(360px, 1.1fr) minmax(0, 0.9fr);
+    gap: 0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    align-items: stretch;
+}
+
+.employee-featured-reverse {
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+}
+
+.employee-photo {
+    height: 420px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.employee-photo-large {
+    height: 520px;
+}
+
+.employee-photo-worst {
+    filter: grayscale(0.2) contrast(0.95);
+    height: 620px;
+}
+
+.employee-copy {
+    padding: 2.25rem;
+    display: grid;
+    align-content: end;
+    gap: 1rem;
+}
+
+.employee-label {
+    font-size: 0.92rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.employee-copy h3 {
+    font-size: clamp(2rem, 3vw, 3.2rem);
+    line-height: 1;
+    color: #F8F8F6;
+}
+
+.employee-copy p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #ECEAE6;
+    max-width: 28rem;
+}
+
+@media (max-width: 900px) {
+    .employee-featured,
+    .employee-featured-reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-photo,
+    .employee-photo-large {
+        min-height: 320px;
+    }
+
+    .employee-photo-worst {
+    filter: grayscale(0.2) contrast(0.95);
+    height: 620px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* employees photo fix */
+.employee-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.employee-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.employee-photo-worst {
+    height: 620px;
+}
+
+@media (max-width: 900px) {
+    .employee-photo,
+    .employee-photo-large,
+    .employee-photo-worst {
+        height: 320px;
+        min-height: 320px;
+    }
+}
+
+.architect-card-primary {
+        padding-top: 3rem;
+    }
+}
+/* benefits section v3 */
+.benefits-heading {
+    max-width: 920px;
+    margin-bottom: 3.4rem;
+}
+
+.benefits-flow {
+    position: relative;
+    display: grid;
+    gap: 1.4rem;
+}
+
+.benefits-flow::before {
+    content: "";
+    position: absolute;
+    top: 0.6rem;
+    bottom: 0.6rem;
+    left: 2.15rem;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(90, 34, 26, 0.24), rgba(90, 34, 26, 0.95), rgba(90, 34, 26, 0.24));
+}
+
+.benefit-flow-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4.3rem 1fr;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.benefit-flow-marker {
+    position: relative;
+    z-index: 1;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+    border: 1px solid rgba(90, 34, 26, 0.86);
+    background: radial-gradient(circle at 30% 30%, rgba(145, 62, 49, 0.3), rgba(20, 12, 12, 0.96));
+    display: grid;
+    place-items: center;
+    transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.32s ease;
+}
+
+.benefit-flow-marker span {
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+    color: #f1e9e8;
+}
+
+.benefit-flow-item:hover .benefit-flow-marker {
+    transform: scale(1.1);
+    border-color: rgba(130, 49, 38, 1);
+    box-shadow: 0 0 0 8px rgba(90, 34, 26, 0.16), 0 12px 26px rgba(0, 0, 0, 0.35);
+}
+
+.benefit-flow-content {
+    position: relative;
+    padding: 0.25rem 0 1.65rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.benefit-flow-content::before {
+    content: "";
+    position: absolute;
+    left: -1.6rem;
+    top: 2rem;
+    width: 1rem;
+    height: 1px;
+    background: rgba(90, 34, 26, 0.82);
+}
+
+.benefit-flow-content:hover {
+    transform: none;
+}
+
+.benefit-flow-item-accent .benefit-flow-content {
+    border-bottom-color: rgba(90, 34, 26, 0.44);
+}
+
+.benefit-flow-content h3 {
+    margin-bottom: 0.65rem;
+    font-size: clamp(1.65rem, 2.4vw, 2.45rem);
+    line-height: 1.12;
+    color: #ffffff;
+}
+
+.benefit-flow-content p {
+    max-width: 900px;
+    font-size: 1.15rem;
+    line-height: 1.68;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 900px) {
+    .benefits-flow::before {
+        left: 1.45rem;
+    }
+
+    .benefit-flow-item {
+        grid-template-columns: 2.9rem 1fr;
+        gap: 1rem;
+    }
+
+    .benefit-flow-marker {
+        width: 2.9rem;
+        height: 2.9rem;
+    }
+
+    .benefit-flow-marker span {
+        font-size: 0.84rem;
+    }
+
+    .benefit-flow-content {
+        padding-bottom: 1.2rem;
+    }
+
+    .benefit-flow-content::before {
+        left: -1rem;
+        top: 1.35rem;
+        width: 0.75rem;
+    }
+
+    .benefit-flow-content h3 {
+        font-size: clamp(1.35rem, 6vw, 1.9rem);
+    }
+
+    .benefit-flow-content p {
+        font-size: 1rem;
+        line-height: 1.58;
     }
 }
