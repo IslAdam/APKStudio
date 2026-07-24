@@ -2024,14 +2024,11 @@ textarea.contact-input {
     }
 
     .employee-photo,
-    .employee-photo-large {
-        min-height: 320px;
-    }
-
+    .employee-photo-large,
     .employee-photo-worst {
-    filter: grayscale(0.2) contrast(0.95);
-    height: 620px;
-}
+        min-height: 320px;
+        height: 320px;
+    }
 }
 
 
@@ -2616,5 +2613,120 @@ textarea.contact-input {
     }
 }
 
+/* laptop responsiveness tuning */
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1280px;
+    }
 
+    .home-section {
+        padding: 7.25rem 0;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(3.1rem, 6.2vw, 5rem);
+    }
+
+    .hero-grid {
+        gap: 2.2rem;
+    }
+
+    .hero-visual-large {
+        min-height: 460px;
+    }
+
+    .service-preview {
+        min-height: 460px;
+    }
+
+    .project-tile-featured {
+        min-height: 500px;
+    }
+
+    .studio-story-image {
+        min-height: 560px;
+    }
+
+    .page-header-copy h1 {
+        font-size: clamp(2.6rem, 4.6vw, 4rem);
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(340px, 0.9fr);
+        gap: 1.5rem;
+    }
+
+    .home-hero {
+        padding: 5rem 0 3.25rem;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2.8rem, 5.4vw, 4.25rem);
+        max-width: 11ch;
+    }
+
+    .home-hero .hero-content p {
+        font-size: 1.08rem;
+    }
+
+    .home-section h2 {
+        font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+    }
+
+    .projects-mosaic {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-tile-featured {
+        grid-row: auto;
+        min-height: 420px;
+    }
+
+    .services-layout,
+    .services-stage,
+    .contacts-composition,
+    .studio-story,
+    .contact-layout-studio,
+    .employee-featured,
+    .employee-featured-reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .service-preview,
+    .studio-story-image,
+    .main-image {
+        min-height: 0;
+        height: 420px;
+    }
+
+    .properties-grid-studio,
+    .steps-studio,
+    .employee-team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .property-image {
+        height: 270px;
+    }
+
+    .employee-photo-large {
+        height: 420px;
+    }
+
+    .employee-photo-worst {
+        height: 460px;
+    }
+
+    .page-header-grid,
+    .page-split,
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
