@@ -110,6 +110,14 @@ a {
     color: #ECEAE6;
 }
 
+.nav-link.active {
+    color: #ffffff;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -2444,6 +2452,23 @@ textarea.contact-input {
     gap: 1rem;
 }
 
+.about-formats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.about-format-item {
+    padding: 1.35rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-format-item h3 {
+    margin: 0 0 0.65rem;
+    font-size: 1.2rem;
+}
+
 .step {
     text-align: left;
     padding: 2rem;
@@ -2633,6 +2658,7 @@ textarea.contact-input {
 
     .properties-grid-studio,
     .steps-studio,
+    .about-formats-grid,
     .employee-team-grid,
     .benefits-list-studio {
         grid-template-columns: 1fr 1fr;
@@ -2672,6 +2698,7 @@ textarea.contact-input {
 
     .properties-grid-studio,
     .steps-studio,
+    .about-formats-grid,
     .employee-team-grid,
     .benefits-list-studio {
         grid-template-columns: 1fr;

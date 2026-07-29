@@ -19,6 +19,65 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const setActiveNavLink = function() {
+        if (!navMenu) {
+            return;
+        }
+
+        const navLinks = navMenu.querySelectorAll('.nav-link');
+        if (navLinks.length === 0) {
+            return;
+        }
+
+        navLinks.forEach(function(link) {
+            link.classList.remove('active');
+        });
+
+        const currentFile = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+        const currentHash = window.location.hash;
+        const routeMap = {
+            'index.html': 'index.html',
+            'about.html': 'index.html',
+            'catalog.html': 'projects.html',
+            'projects.html': 'projects.html',
+            'property.html': 'projects.html',
+            'services.html': 'services.html',
+            'employees.html': 'employees.html',
+            'contact.html': 'contact.html'
+        };
+
+        let targetHref = routeMap[currentFile] || currentFile;
+
+        if (currentFile === 'index.html' && currentHash) {
+            const hashLink = navMenu.querySelector('.nav-link[href="' + currentHash + '"]');
+            if (hashLink) {
+                hashLink.classList.add('active');
+                return;
+            }
+
+            const indexHashLink = navMenu.querySelector('.nav-link[href="index.html' + currentHash + '"]');
+            if (indexHashLink) {
+                indexHashLink.classList.add('active');
+                return;
+            }
+        }
+
+        const directMatch = navMenu.querySelector('.nav-link[href="' + targetHref + '"]');
+        if (directMatch) {
+            directMatch.classList.add('active');
+            return;
+        }
+
+        if (targetHref === 'index.html') {
+            const homeLink = navMenu.querySelector('.nav-link[href="index.html"]');
+            if (homeLink) {
+                homeLink.classList.add('active');
+            }
+        }
+    };
+
+    setActiveNavLink();
+
     // Плавное перемещение при клике на якоря
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
