@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и цены - APK Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">APK Studio</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="projects.html" class="nav-link">Проекты</a></li>
+                <li><a href="services.html" class="nav-link active">Услуги</a></li>
+                <li><a href="employees.html" class="nav-link">Сотрудники</a></li>
+                <li><a href="index.html#contacts" class="nav-link">Контакты</a></li>
+                <li><a href="contact.html" class="nav-link">Заявка</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header page-header-studio">
+        <div class="container page-header-grid">
+            <div class="page-header-copy" data-reveal="up">
+                <span class="section-kicker">Услуги и цены</span>
+                <h1>Выберите формат работы под ваш объект, сроки и уровень сопровождения.</h1>
+                <p>Работаем с квартирами, частными домами и коммерческими пространствами. Ниже — прозрачные тарифы и состав документации.</p>
+            </div>
+            <article class="page-header-note" data-reveal="up" data-delay="120">
+                <span class="hero-note-label">Стоимость</span>
+                <strong>От 3 000 ₽/м²</strong>
+                <p>Финальная цена зависит от типа объекта, площади, сроков и глубины сопровождения.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="interior-page-section services-pricing">
+        <div class="container page-stack">
+            <div class="section-heading section-heading-compact" data-reveal="up">
+                <span class="section-kicker">Тарифы</span>
+                <h2>Три уровня проекта: от рабочей базы до полного сопровождения.</h2>
+            </div>
+
+            <div class="service-tariffs-grid">
+                <article class="service-tariff-card page-panel" data-reveal="up" data-delay="40">
+                    <div class="service-tariff-head">
+                        <span class="service-tariff-index">01</span>
+                        <h3>Базовый</h3>
+                    </div>
+                    <p class="service-tariff-price">3 000 ₽/м²</p>
+                    <ul class="service-tariff-list">
+                        <li>Два планировочных решения</li>
+                        <li>Рабочая документация</li>
+                        <li>Базовые ведомости</li>
+                    </ul>
+                    <button class="service-more-btn" type="button" data-target="tariff-base">Подробнее</button>
+                    <div class="service-more-panel" id="tariff-base" hidden>
+                        <ul class="service-more-list">
+                            <li>Обмерный план</li>
+                            <li>План демонтажа и монтажа</li>
+                            <li>План зонирования и перепланировки</li>
+                            <li>План расстановки мебели</li>
+                            <li>Спецификация дверей</li>
+                            <li>План осветительного оборудования</li>
+                            <li>План выключателей и розеток</li>
+                            <li>План сантехнического оборудования</li>
+                            <li>План кондиционирования</li>
+                            <li>План напольных покрытий и потолков</li>
+                            <li>Ведомость отделки помещений</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-tariff-card page-panel" data-reveal="up" data-delay="120">
+                    <div class="service-tariff-head">
+                        <span class="service-tariff-index">02</span>
+                        <h3>Стандартный</h3>
+                    </div>
+                    <p class="service-tariff-price">4 500 ₽/м²</p>
+                    <ul class="service-tariff-list">
+                        <li>Четыре планировочных решения</li>
+                        <li>3D-визуализация всех комнат</li>
+                        <li>Рабочая документация</li>
+                        <li>Спецификация мебели</li>
+                    </ul>
+                    <button class="service-more-btn" type="button" data-target="tariff-standard">Подробнее</button>
+                    <div class="service-more-panel" id="tariff-standard" hidden>
+                        <ul class="service-more-list">
+                            <li>Все позиции из тарифа «Базовый»</li>
+                            <li>Развертки стен</li>
+                            <li>План теплых полов</li>
+                            <li>3D-визуализация всех помещений</li>
+                            <li>Раскладка плитки</li>
+                            <li>Проектирование индивидуальной мебели и дверей</li>
+                            <li>Полная комплектация интерьера</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-tariff-card page-panel page-panel-accent" data-reveal="up" data-delay="200">
+                    <div class="service-tariff-head">
+                        <span class="service-tariff-index">03</span>
+                        <h3>Премиум</h3>
+                    </div>
+                    <p class="service-tariff-price">от 6 500 ₽/м²</p>
+                    <ul class="service-tariff-list">
+                        <li>Четыре планировочных решения</li>
+                        <li>3D-визуализация всех комнат</li>
+                        <li>Рабочая документация и спецификации</li>
+                        <li>Работа с подрядчиками</li>
+                        <li>Авторский надзор дизайнера</li>
+                    </ul>
+                    <button class="service-more-btn" type="button" data-target="tariff-premium">Подробнее</button>
+                    <div class="service-more-panel" id="tariff-premium" hidden>
+                        <ul class="service-more-list">
+                            <li>Все позиции из тарифа «Стандартный»</li>
+                            <li>Составление сметы на строительные работы</li>
+                            <li>Смета на черновые материалы</li>
+                            <li>Работа с подрядчиками</li>
+                            <li>Авторский надзор дизайнера</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="interior-page-section services-scope">
+        <div class="container page-stack">
+            <div class="section-heading section-heading-compact" data-reveal="up">
+                <span class="section-kicker">Варианты работы</span>
+                <h2>Состав проектной документации и дополнительные услуги.</h2>
+            </div>
+
+            <div class="services-scope-grid">
+                <article class="page-panel" data-reveal="up">
+                    <h3>Что входит в проект</h3>
+                    <ul class="service-doc-list">
+                        <li>Обмерный план</li>
+                        <li>План демонтажа и монтажа</li>
+                        <li>План зонирования и перепланировки</li>
+                        <li>План расстановки мебели</li>
+                        <li>Спецификация дверей</li>
+                        <li>План осветительного оборудования</li>
+                        <li>План выключателей и розеток</li>
+                        <li>Схемы взаимодействия света и выключателей</li>
+                        <li>План сантехнического оборудования</li>
+                        <li>План кондиционирования</li>
+                        <li>План напольных покрытий и потолков</li>
+                        <li>Ведомость отделки помещений</li>
+                        <li>Расчет конфигурации кухни и техники</li>
+                    </ul>
+                </article>
+
+                <article class="page-panel" data-reveal="up" data-delay="120">
+                    <h3>Дополнительно</h3>
+                    <ul class="service-doc-list service-doc-list-accent">
+                        <li>Развертки стен</li>
+                        <li>План теплых полов</li>
+                        <li>Раскладка плитки</li>
+                        <li>Индивидуальная мебель и двери под заказ</li>
+                        <li>Полная комплектация интерьера</li>
+                        <li>Выезд на объект / консультация</li>
+                        <li>Выезд за город</li>
+                        <li>Составление смет</li>
+                        <li>Авторский надзор</li>
+                    </ul>
+                    <div class="service-extra-note">
+                        <strong>Создание логотипа:</strong> от 50 000 ₽
+                    </div>
+                </article>
+            </div>
+
+            <div class="services-cta page-panel page-panel-accent" data-reveal="up">
+                <h3>Нужен расчет под ваш объект?</h3>
+                <p>Оставьте заявку — подготовим персональное коммерческое предложение с привязкой к площади, срокам и задачам.</p>
+                <a href="contact.html" class="btn btn-primary">Получить расчет</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div><h3>APK Studio</h3><p>Архитектурный дизайн интерьеров и частных домов</p></div>
+            <div><p><a href="about.html">О студии</a></p><p><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p><p><a href="tel:+79896668777">+7 989 666 8777</a></p></div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelectorAll('.service-more-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var panel = document.getElementById(button.dataset.target);
+                var isHidden = panel.hasAttribute('hidden');
+                if (isHidden) {
+                    panel.removeAttribute('hidden');
+                    button.textContent = 'Свернуть';
+                } else {
+                    panel.setAttribute('hidden', '');
+                    button.textContent = 'Подробнее';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
