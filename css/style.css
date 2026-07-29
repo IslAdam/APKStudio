@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Foglihten', sans-serif;
     line-height: 1.6;
@@ -1011,7 +1016,7 @@ section h2::after {
 }
 
 .footer-content > div {
-    min-width: 220px;
+    min-width: 0;
 }
 
 .footer-content {
@@ -1069,7 +1074,7 @@ section h2::after {
     }
 
     .nav-menu.active {
-        max-height: 300px;
+        max-height: 420px;
     }
 
     .nav-menu li {
@@ -3303,4 +3308,62 @@ textarea.contact-input {
     .studio-story-head h2 {
         overflow-wrap: anywhere;
     }
+}
+
+/* ===== ГЛОБАЛЬНЫЕ ФИКСЫ ДЛЯ МОБИЛЬНЫХ ===== */
+
+/* Отключаем background-attachment:fixed на мобиле
+   (iOS Safari не поддерживает, вызывает баги отрисовки) */
+@media (max-width: 1024px) {
+    .hero,
+    .page-header,
+    .catalog,
+    .property-detail,
+    .about-content,
+    .home-hero {
+        background-attachment: scroll;
+    }
+}
+
+/* min-width кнопок героя — сбрасываем чтобы не выходили за экран */
+@media (max-width: 768px) {
+    .hero-actions .btn {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+/* Уменьшаем паддинги на маленьких экранах */
+@media (max-width: 480px) {
+    .home-section {
+        padding: 4rem 0;
+    }
+
+    .interior-page-section {
+        padding: 3.5rem 0;
+    }
+
+    .page-header-studio {
+        padding: 5rem 0 3.5rem;
+    }
+
+    .projects-cta-inner {
+        padding: 40px 0;
+    }
+
+    .section-heading-compact h2 {
+        font-size: clamp(1.8rem, 8vw, 2.6rem);
+    }
+}
+
+/* Предотвращаем растягивание grid-элементов шире контейнера */
+.hero-grid > *,
+.services-layout > *,
+.services-stage > *,
+.studio-story-layout > *,
+.studio-story > *,
+.contacts-composition > *,
+.benefits-flow > *,
+.employee-highlights > * {
+    min-width: 0;
 }
