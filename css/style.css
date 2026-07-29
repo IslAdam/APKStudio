@@ -1400,6 +1400,7 @@ textarea.contact-input {
 
 .section-heading,
 .studio-story,
+.studio-story-layout,
 .contacts-composition {
     display: grid;
     gap: 2rem;
@@ -1803,10 +1804,15 @@ textarea.contact-input {
     color: rgba(255, 255, 255, 0.86);
 }
 
-.studio-story {
+.studio-story-layout {
     grid-template-columns: 0.95fr 1.05fr;
     align-items: start;
     margin-bottom: 2.5rem;
+}
+
+.studio-story {
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: start;
 }
 
 .studio-story-copy {
@@ -1821,6 +1827,8 @@ textarea.contact-input {
     background-size: cover;
     background-position: center;
     box-shadow: var(--shadow-soft);
+    width: 100%;
+    max-width: 100%;
 }
 
 .home-contacts {
@@ -1954,6 +1962,7 @@ textarea.contact-input {
     .hero-grid,
     .services-layout,
     .contacts-composition,
+    .studio-story-layout,
     .studio-story {
         grid-template-columns: 1fr;
     }
@@ -2006,6 +2015,12 @@ textarea.contact-input {
 
     .studio-story-image {
         min-height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .studio-story-image {
+        min-height: 320px;
     }
 }
 
