@@ -1404,7 +1404,6 @@ textarea.contact-input {
 }
 
 .section-heading,
-.studio-story,
 .studio-story-layout,
 .contacts-composition {
     display: grid;
@@ -1816,8 +1815,9 @@ textarea.contact-input {
 }
 
 .studio-story {
-    grid-template-columns: 0.95fr 1.05fr;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .studio-story-copy {
@@ -1967,8 +1967,7 @@ textarea.contact-input {
     .hero-grid,
     .services-layout,
     .contacts-composition,
-    .studio-story-layout,
-    .studio-story {
+    .studio-story-layout {
         grid-template-columns: 1fr;
     }
 
@@ -3278,8 +3277,7 @@ textarea.contact-input {
 }
 
 @media (max-width: 768px) {
-    .projects-cta-inner,
-    .studio-story {
+    .projects-cta-inner {
         grid-template-columns: minmax(0, 1fr);
     }
 
