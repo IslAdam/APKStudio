@@ -1427,7 +1427,7 @@ textarea.contact-input {
     background:
         radial-gradient(circle at top right, rgba(90, 34, 26, 0.32), transparent 30%),
         linear-gradient(160deg, rgba(11, 12, 13, 0.74), rgba(11, 12, 13, 0.48)),
-        url('https://static.tildacdn.info/tild6231-6236-4263-a266-646135313033/WhatsApp_Image_2022-.jpeg') center/cover;
+        url('../assets/images/main/1.jpeg') center/cover;
 }
 
 .home-hero::before {
@@ -1782,7 +1782,7 @@ textarea.contact-input {
     overflow: hidden;
     background-image:
         linear-gradient(180deg, rgba(8, 8, 8, 0.16), rgba(8, 8, 8, 0.62)),
-        url('https://static.tildacdn.info/tild6262-3761-4330-b637-616134323233/3_.jpg');
+        url('../assets/images/main/2.jpg');
     background-size: cover;
     background-position: center;
     box-shadow: var(--shadow-soft);
@@ -1895,7 +1895,7 @@ textarea.contact-input {
     gap: 1rem;
     background:
         linear-gradient(180deg, rgba(8, 8, 8, 0.1), rgba(8, 8, 8, 0.68)),
-        url('https://static.tildacdn.info/tild3566-3035-4964-a662-323965363738/2_.jpg') center/cover;
+        url('../assets/images/main/6.jpg') center/cover;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -2320,7 +2320,7 @@ textarea.contact-input {
     background:
         linear-gradient(180deg, rgba(6, 6, 6, 0.28), rgba(6, 6, 6, 0.76)),
         linear-gradient(120deg, rgba(90, 34, 26, 0.18), rgba(255, 255, 255, 0.02)),
-        url('https://static.tildacdn.info/tild6231-6236-4263-a266-646135313033/WhatsApp_Image_2022-.jpeg') center/cover;
+        url('../assets/images/main/1.jpeg') center/cover;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
