@@ -26,7 +26,7 @@
         </div>
     </nav>
 
-    <section class="page-header page-header-studio">
+    <section class="page-header page-header-studio page-header-projects">
         <div class="container page-header-grid">
             <div class="page-header-copy" data-reveal="up">
                 <span class="section-kicker">Портфолио</span>
@@ -967,11 +967,160 @@
         </div>
     </footer>
 
+    <div class="image-lightbox" id="projectLightbox" inert>
+        <button class="close-btn" id="projectLightboxClose" aria-label="Закрыть большое изображение">×</button>
+        <button class="lightbox-nav prev" id="projectLightboxPrev" aria-label="Предыдущее изображение">‹</button>
+        <div class="lightbox-media">
+            <img id="projectLightboxImage" src="" alt="" />
+            <div class="lightbox-counter" id="projectLightboxCounter"></div>
+        </div>
+        <button class="lightbox-nav next" id="projectLightboxNext" aria-label="Следующее изображение">›</button>
+    </div>
+
     <script src="js/script.js"></script>
     <script>
         const filterBtns = document.querySelectorAll('.filter-btn');
         const showcases = document.querySelectorAll('.project-showcase');
         const categorySections = document.querySelectorAll('.projects-category-section');
+        const lightbox = document.getElementById('projectLightbox');
+        const lightboxImage = document.getElementById('projectLightboxImage');
+        const lightboxCounter = document.getElementById('projectLightboxCounter');
+        const lightboxClose = document.getElementById('projectLightboxClose');
+        const lightboxPrev = document.getElementById('projectLightboxPrev');
+        const lightboxNext = document.getElementById('projectLightboxNext');
+        let lightboxImages = [];
+        let currentLightboxIndex = 0;
+
+        function openLightbox(images, index) {
+            if (!images || images.length === 0) {
+                return;
+            }
+
+            lightboxImages = images;
+            currentLightboxIndex = index;
+            const currentImage = lightboxImages[currentLightboxIndex];
+
+            if (!currentImage) {
+                return;
+            }
+
+            const imageSource = currentImage.getAttribute('src') || currentImage.src;
+            const imageAlt = currentImage.getAttribute('alt') || 'Фото проекта';
+            lightboxImage.src = imageSource;
+            lightboxImage.alt = imageAlt;
+            lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${lightboxImages.length}`;
+            lightbox.classList.add('active');
+            lightbox.removeAttribute('inert');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            lightbox.setAttribute('inert', '');
+            lightboxImage.src = '';
+            document.body.style.overflow = '';
+        }
+
+        function showPreviousImage() {
+            if (!lightboxImages.length) {
+                return;
+            }
+            currentLightboxIndex = (currentLightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+            openLightbox(lightboxImages, currentLightboxIndex);
+        }
+
+        function showNextImage() {
+            if (!lightboxImages.length) {
+                return;
+            }
+            currentLightboxIndex = (currentLightboxIndex + 1) % lightboxImages.length;
+            openLightbox(lightboxImages, currentLightboxIndex);
+        }
+
+        document.querySelectorAll('.project-photos-grid').forEach(grid => {
+            const images = Array.from(grid.querySelectorAll('img'));
+            if (images.length === 0) {
+                return;
+            }
+
+            const showcase = grid.closest('.project-showcase');
+            const title = showcase?.querySelector('.project-showcase-header h3')?.textContent?.trim() || 'Проект';
+            const previewCount = images.length > 3 ? 3 : images.length;
+            const hiddenCount = images.length - previewCount;
+
+            images.forEach((img, index) => {
+                const isVisiblePreview = index < previewCount;
+                img.style.display = isVisiblePreview ? '' : 'none';
+
+                if (!isVisiblePreview) {
+                    return;
+                }
+
+                img.style.cursor = 'zoom-in';
+                img.setAttribute('role', 'button');
+                img.setAttribute('tabindex', '0');
+                img.setAttribute('aria-label', `Открыть фото ${index + 1} проекта ${title}`);
+
+                img.addEventListener('click', () => {
+                    openLightbox(images, index);
+                });
+
+                img.addEventListener('keydown', event => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        img.click();
+                    }
+                });
+            });
+
+            if (hiddenCount > 0) {
+                const moreButton = document.createElement('button');
+                moreButton.type = 'button';
+                moreButton.className = 'project-photos-more';
+                moreButton.innerHTML = `<span>+${hiddenCount}</span><small>ещё</small>`;
+                moreButton.setAttribute('aria-label', `Показать все ${images.length} фото проекта ${title}`);
+                moreButton.addEventListener('click', () => {
+                    openLightbox(images, previewCount);
+                });
+                moreButton.addEventListener('keydown', event => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        moreButton.click();
+                    }
+                });
+                grid.appendChild(moreButton);
+            }
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', event => {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+        lightboxPrev.addEventListener('click', event => {
+            event.stopPropagation();
+            showPreviousImage();
+        });
+        lightboxNext.addEventListener('click', event => {
+            event.stopPropagation();
+            showNextImage();
+        });
+
+        document.addEventListener('keydown', event => {
+            if (!lightbox.classList.contains('active')) {
+                return;
+            }
+
+            if (event.key === 'Escape') {
+                closeLightbox();
+            } else if (event.key === 'ArrowLeft') {
+                showPreviousImage();
+            } else if (event.key === 'ArrowRight') {
+                showNextImage();
+            }
+        });
+
         filterBtns.forEach(btn => {
             btn.addEventListener('click', function() {
                 const filter = this.dataset.filter;

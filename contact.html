@@ -36,9 +36,9 @@
                 <p>Оставьте контактные данные и краткое описание проекта — так нам будет проще сразу понять задачу и предложить подходящий сценарий сотрудничества.</p>
             </div>
             <article class="page-header-note" data-reveal="up" data-delay="120">
-                <span class="hero-note-label">Важно</span>
-                <strong>Форма пока не подключена</strong>
-                <p>...</p>
+                <span class="hero-note-label">Как это работает</span>
+                <strong>Форма — быстрый старт</strong>
+                <p>После отправки формы менеджер свяжется с вами и уточнит детали по проекту.</p>
             </article>
         </div>
     </section>
@@ -46,31 +46,96 @@
     <section class="about-content interior-page-section">
         <div class="container">
             <div class="contact-layout contact-layout-studio">
+                <article class="property-section page-panel page-panel-accent" id="project-create" data-reveal="up" data-delay="100">
+                    <div class="section-heading section-heading-compact">
+                        <span class="section-kicker">Форма заявки</span>
+                        <h2>Создание проекта</h2>
+                    </div>
+                    <form class="project-create-card contact-project-form" id="projectCreateForm">
+                        <div class="project-create-head">
+                            <div>
+                                <h1>Параметры проекта</h1>
+                                <p>Заполните поля ниже — это поможет быстрее подготовить персональное предложение.</p>
+                            </div>
+                        </div>
+
+                        <label class="project-create-field">
+                            <span>ФИО <em>*</em></span>
+                            <input type="text" name="fullName" placeholder="Иванов Иван Иванович" required>
+                        </label>
+
+                        <label class="project-create-field">
+                            <span>Почта <em>*</em></span>
+                            <input type="email" name="email" placeholder="example@mail.ru" required>
+                        </label>
+
+                        <label class="project-create-field">
+                            <span>Номер телефона <em>*</em></span>
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </label>
+
+                        <fieldset class="project-create-types">
+                            <legend>Тип объекта</legend>
+                            <input type="hidden" name="objectType" id="objectType" value="Квартира">
+                            <div class="project-type-grid">
+                                <button type="button" class="project-type-card is-selected" data-type="Квартира">
+                                    <span class="project-type-icon icon-cyan">🏢</span>
+                                    <strong>Квартира</strong>
+                                </button>
+                                <button type="button" class="project-type-card" data-type="Дом">
+                                    <span class="project-type-icon icon-green">🏠</span>
+                                    <strong>Дом</strong>
+                                </button>
+                                <button type="button" class="project-type-card" data-type="Офис">
+                                    <span class="project-type-icon icon-amber">💼</span>
+                                    <strong>Офис</strong>
+                                </button>
+                                <button type="button" class="project-type-card" data-type="Коммерция">
+                                    <span class="project-type-icon icon-red">🏬</span>
+                                    <strong>Коммерция</strong>
+                                </button>
+                            </div>
+                        </fieldset>
+
+                        <label class="project-create-field">
+                            <span>Город</span>
+                            <input type="text" name="city" placeholder="Введите город">
+                            <small>Опционально</small>
+                        </label>
+
+                        <label class="project-create-field">
+                            <span>Площадь</span>
+                            <div class="project-area-input-wrap">
+                                <input type="number" min="0" step="0.1" name="area" placeholder="0">
+                                <b>м²</b>
+                            </div>
+                            <small>Опционально</small>
+                        </label>
+
+                        <label class="project-create-field project-create-field-wide">
+                            <span>Описание проекта</span>
+                            <textarea name="description" rows="4" placeholder="Расскажите кратко о задаче, стиле и пожеланиях"></textarea>
+                            <small>Опционально</small>
+                        </label>
+
+                        <div class="project-create-actions">
+                            <button type="submit" class="project-create-submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </article>
+
                 <article class="property-section page-panel" data-reveal="up">
                     <div class="section-heading section-heading-compact">
                         <span class="section-kicker">Контакты</span>
                         <h2>Связаться со студией</h2>
                     </div>
+                    <p class="contact-links-intro">Выберите удобный канал связи, если хотите задать вопрос до заполнения формы.</p>
                     <div class="contact-links-studio">
-                        <div class="contact-link-card"><span>Email</span><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></div>
-                        <div class="contact-link-card"><span>Телефон</span><a href="tel:+79896668777">+7 989 666 8777</a></div>
+                        <div class="contact-link-card"><span>Email</span><a href="mailto:apk.company1@gmail.com">apk.company1@gmail.com</a></div>
+                        <div class="contact-link-card"><span>Телефон</span><a href="tel:+79896713057">+7 989 671 3057</a></div>
                         <div class="contact-link-card"><span>WhatsApp</span><a href="https://wa.me/message/YE4LWTNWH3J5M1" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a></div>
                         <div class="contact-link-card"><span>Instagram</span><a href="https://instagram.com/apk_zone" target="_blank" rel="noopener noreferrer">@apk_zone</a></div>
                     </div>
-                </article>
-
-                <article class="property-section page-panel page-panel-accent" data-reveal="up" data-delay="100">
-                    <div class="section-heading section-heading-compact">
-                        <span class="section-kicker">Форма заявки</span>
-                        <h2>Опишите ваш проект</h2>
-                    </div>
-                    <form class="contact-form">
-                        <input type="text" class="contact-input" placeholder="Ваше имя" />
-                        <input type="email" class="contact-input" placeholder="Email" />
-                        <input type="tel" class="contact-input" placeholder="Телефон" />
-                        <textarea class="contact-input" placeholder="Кратко о проекте" rows="6"></textarea>
-                        <button type="button" class="btn btn-primary">Отправить заявку</button>
-                    </form>
                 </article>
             </div>
         </div>
@@ -79,10 +144,38 @@
     <footer class="footer">
         <div class="container footer-content">
             <div><h3>APK Studio</h3><p>Архитектурный дизайн интерьеров и частных домов</p></div>
-            <div><p><a href="about.html">О студии</a></p><p><a href="mailto:apkstudio@mail.ru">apkstudio@mail.ru</a></p><p><a href="tel:+79896668777">+7 989 666 8777</a></p></div>
+            <div><p><a href="about.html">О студии</a></p><p><a href="mailto:apk.company1@gmail.com">apk.company1@gmail.com</a></p><p><a href="tel:+79896713057">+7 989 671 3057</a></p></div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        (function() {
+            const form = document.getElementById('projectCreateForm');
+            if (!form) {
+                return;
+            }
+
+            const typeButtons = form.querySelectorAll('.project-type-card');
+            const typeInput = document.getElementById('objectType');
+
+            typeButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    typeButtons.forEach(function(item) {
+                        item.classList.remove('is-selected');
+                    });
+                    button.classList.add('is-selected');
+                    typeInput.value = button.getAttribute('data-type') || '';
+                });
+            });
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const submitButton = form.querySelector('.project-create-submit');
+                submitButton.textContent = 'Заявка отправлена (демо)';
+                submitButton.disabled = true;
+            });
+        })();
+    </script>
 </body>
 </html>
