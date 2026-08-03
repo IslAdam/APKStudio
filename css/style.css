@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-v4020-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,10 +70,7 @@ a {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    background: linear-gradient(135deg, #ECEAE6 0%, #F8F8F6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #F8F8F6;
     transition: all 0.3s ease;
     font-family: 'Foglihten', sans-serif;
     letter-spacing: 1px;
@@ -1199,10 +1203,7 @@ body {
 }
 
 .logo {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--text-primary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #F8F8F6;
 }
 
 .nav-link,
@@ -1401,6 +1402,12 @@ textarea.contact-input {
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.72);
+}
+
+.section-kicker {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.12em;
 }
 
 .section-heading,
