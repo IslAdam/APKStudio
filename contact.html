@@ -51,7 +51,11 @@
                         <span class="section-kicker">Форма заявки</span>
                         <h2>Создание проекта</h2>
                     </div>
-                    <form class="project-create-card contact-project-form" id="projectCreateForm">
+                    <form class="project-create-card contact-project-form" id="projectCreateForm" novalidate>
+                        <input type="hidden" name="access_key" value="f445e3b4-bd8b-459e-86b8-ae3b34ab56dd">
+                        <input type="hidden" name="subject" value="Новая заявка с сайта APK Studio">
+                        <input type="hidden" name="from_name" value="APK Studio">
+                        <input type="checkbox" name="botcheck" class="form-botcheck" tabindex="-1" autocomplete="off">
                         <div class="project-create-head">
                             <div>
                                 <h1>Параметры проекта</h1>
@@ -120,6 +124,7 @@
 
                         <div class="project-create-actions">
                             <button type="submit" class="project-create-submit">Отправить заявку</button>
+                            <p class="project-create-status" id="projectCreateStatus" aria-live="polite"></p>
                         </div>
                     </form>
                 </article>
@@ -131,10 +136,12 @@
                     </div>
                     <p class="contact-links-intro">Выберите удобный канал связи, если хотите задать вопрос до заполнения формы.</p>
                     <div class="contact-links-studio">
-                        <div class="contact-link-card"><span>Email</span><a href="mailto:apk.company1@gmail.com">apk.company1@gmail.com</a></div>
+                        <div class="contact-link-card"><span>Почта</span><a href="mailto:apk.company1@gmail.com">apk.company1@gmail.com</a></div>
                         <div class="contact-link-card"><span>Телефон</span><a href="tel:+79896713057">+7 989 671 3057</a></div>
                         <div class="contact-link-card"><span>WhatsApp</span><a href="https://wa.me/message/YE4LWTNWH3J5M1" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a></div>
                         <div class="contact-link-card"><span>Instagram</span><a href="https://instagram.com/apk_zone" target="_blank" rel="noopener noreferrer">@apk_zone</a></div>
+                        <div class="contact-link-card"><span>VK</span><a href="https://vk.ru/club212065492" target="_blank" rel="noopener noreferrer">APK Studio</a></div>
+                        <div class="contact-link-card"><span>Behance</span><a href="https://www.behance.net/apkstudio1" target="_blank" rel="noopener noreferrer">apkstudio1</a></div>
                     </div>
                 </article>
             </div>
@@ -158,6 +165,24 @@
 
             const typeButtons = form.querySelectorAll('.project-type-card');
             const typeInput = document.getElementById('objectType');
+            const submitButton = form.querySelector('.project-create-submit');
+            const status = document.getElementById('projectCreateStatus');
+            const accessKeyInput = form.querySelector('input[name="access_key"]');
+            const defaultSubmitLabel = submitButton ? submitButton.textContent : '';
+            const defaultTypeButton = form.querySelector('.project-type-card[data-type="Квартира"]');
+
+            const setStatus = function(message, type) {
+                if (!status) {
+                    return;
+                }
+
+                status.textContent = message;
+                status.classList.remove('is-success', 'is-error', 'is-loading');
+
+                if (type) {
+                    status.classList.add(type);
+                }
+            };
 
             typeButtons.forEach(function(button) {
                 button.addEventListener('click', function() {
@@ -169,11 +194,58 @@
                 });
             });
 
-            form.addEventListener('submit', function(event) {
+            form.addEventListener('submit', async function(event) {
                 event.preventDefault();
-                const submitButton = form.querySelector('.project-create-submit');
-                submitButton.textContent = 'Заявка отправлена (демо)';
+
+                if (!form.reportValidity()) {
+                    return;
+                }
+
+                if (!accessKeyInput || !accessKeyInput.value || accessKeyInput.value === 'PASTE_WEB3FORMS_ACCESS_KEY_HERE') {
+                    setStatus('Вставьте access key Web3Forms в код формы, чтобы включить отправку заявок.', 'is-error');
+                    return;
+                }
+
                 submitButton.disabled = true;
+                submitButton.textContent = 'Отправка...';
+                setStatus('Отправляем заявку...', 'is-loading');
+
+                try {
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json'
+                        },
+                        body: new FormData(form)
+                    });
+
+                    const result = await response.json();
+
+                    if (!response.ok || !result.success) {
+                        setStatus(result.message || 'Не удалось отправить заявку. Попробуйте еще раз.', 'is-error');
+                        return;
+                    }
+
+                    form.reset();
+                    typeButtons.forEach(function(item) {
+                        item.classList.remove('is-selected');
+                    });
+
+                    if (defaultTypeButton) {
+                        defaultTypeButton.classList.add('is-selected');
+                    }
+
+                    if (typeInput) {
+                        typeInput.value = 'Квартира';
+                    }
+
+                    setStatus('Заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.', 'is-success');
+                } catch (error) {
+                    setStatus('Не удалось отправить заявку из-за ошибки сети. Попробуйте еще раз.', 'is-error');
+                } finally {
+                    submitButton.disabled = false;
+                    submitButton.textContent = defaultSubmitLabel;
+                }
             });
         })();
     </script>
