@@ -1970,10 +1970,28 @@ textarea.contact-input {
     flex-direction: column;
     justify-content: flex-end;
     gap: 1rem;
-    background:
-        linear-gradient(180deg, rgba(8, 8, 8, 0.1), rgba(8, 8, 8, 0.68)),
-        url('../assets/images/main/6.jpg') center/cover;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    border: none;
+    background: url('../assets/images/main/6.jpg') center/cover;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contacts-map::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background:
+        linear-gradient(100deg, rgba(8, 8, 8, 0.72) 0%, rgba(8, 8, 8, 0.52) 42%, rgba(8, 8, 8, 0.26) 72%, rgba(8, 8, 8, 0.08) 100%),
+        linear-gradient(180deg, rgba(8, 8, 8, 0.22) 0%, rgba(8, 8, 8, 0.48) 100%);
+    z-index: 0;
+}
+
+.contacts-map > * {
+    position: relative;
+    z-index: 1;
 }
 
 .contacts-map strong {
