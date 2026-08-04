@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый проект - APK Studio</title>
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html" class="logo">APK Studio</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="projects.html" class="nav-link">Проекты</a></li>
+                <li><a href="create-project.html" class="nav-link active">Ваш проект</a></li>
+                <li><a href="services.html" class="nav-link">Услуги</a></li>
+                <li><a href="employees.html" class="nav-link">Сотрудники</a></li>
+                <li><a href="index.html#contacts" class="nav-link">Контакты</a></li>
+                <li><a href="contact.html" class="nav-link">Заявка</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header page-header-studio">
+        <div class="container page-header-grid">
+            <div class="page-header-copy" data-reveal="up">
+                <span class="section-kicker">Ваш проект</span>
+                <h1>Создание проекта в едином рабочем формате студии.</h1>
+                <p>Заполните основные параметры объекта — это ускорит оценку, планирование и запуск работы команды.</p>
+            </div>
+            <article class="page-header-note" data-reveal="up" data-delay="120">
+                <span class="hero-note-label">Этап</span>
+                <strong>Старт проекта</strong>
+                <p>Выберите тип объекта, укажите город и базовые данные. Детали можно дополнить позже.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="project-create-page">
+        <div class="container">
+            <div class="project-create-shell">
+                <form class="project-create-card" id="projectCreateForm">
+                    <div class="project-create-head">
+                        <div>
+                            <h1>Новый проект</h1>
+                            <p>Создайте проект и пригласите заказчика</p>
+                        </div>
+                    </div>
+
+                    <label class="project-create-field">
+                        <span>ФИО <em>*</em></span>
+                        <input type="text" name="fullName" placeholder="Иванов Иван Иванович" required>
+                    </label>
+
+                    <label class="project-create-field">
+                        <span>Почта <em>*</em></span>
+                        <input type="email" name="email" placeholder="example@mail.ru" required>
+                    </label>
+
+                    <label class="project-create-field">
+                        <span>Номер телефона <em>*</em></span>
+                        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </label>
+
+                    <fieldset class="project-create-types">
+                        <legend>Тип объекта</legend>
+                        <input type="hidden" name="objectType" id="objectType" value="Квартира">
+                        <div class="project-type-grid">
+                            <button type="button" class="project-type-card is-selected" data-type="Квартира">
+                                <span class="project-type-icon icon-cyan">🏢</span>
+                                <strong>Квартира</strong>
+                            </button>
+                            <button type="button" class="project-type-card" data-type="Дом">
+                                <span class="project-type-icon icon-green">🏠</span>
+                                <strong>Дом</strong>
+                            </button>
+                            <button type="button" class="project-type-card" data-type="Офис">
+                                <span class="project-type-icon icon-amber">💼</span>
+                                <strong>Офис</strong>
+                            </button>
+                            <button type="button" class="project-type-card" data-type="Коммерция">
+                                <span class="project-type-icon icon-red">🏬</span>
+                                <strong>Коммерция</strong>
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <label class="project-create-field">
+                        <span>Город</span>
+                        <input type="text" name="city" placeholder="Введите город">
+                        <small>Можно заполнить позже</small>
+                    </label>
+
+                    <label class="project-create-field">
+                        <span>Площадь</span>
+                        <div class="project-area-input-wrap">
+                            <input type="number" min="0" step="0.1" name="area" placeholder="0">
+                            <b>м²</b>
+                        </div>
+                        <small>Опционально</small>
+                    </label>
+
+                    <div class="project-create-actions">
+                        <button type="submit" class="project-create-submit">Создать проект</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        (function() {
+            const form = document.getElementById('projectCreateForm');
+            const typeButtons = form.querySelectorAll('.project-type-card');
+            const typeInput = document.getElementById('objectType');
+
+            typeButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    typeButtons.forEach(function(item) {
+                        item.classList.remove('is-selected');
+                    });
+                    button.classList.add('is-selected');
+                    typeInput.value = button.getAttribute('data-type') || '';
+                });
+            });
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const submitButton = form.querySelector('.project-create-submit');
+                submitButton.textContent = 'Проект создан (демо)';
+                submitButton.disabled = true;
+            });
+        })();
+    </script>
+</body>
+</html>
