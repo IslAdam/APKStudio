@@ -3863,7 +3863,7 @@ textarea.contact-input {
 }
 
 .project-create-card {
-    background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(90, 34, 26, 0.16));
+    background: rgba(20, 21, 22, 0.86);
     color: var(--text-primary);
     border: 1px solid var(--stroke);
     border-radius: 0;
@@ -4086,8 +4086,8 @@ textarea.contact-input {
 .project-create-submit {
     border: none;
     border-radius: 0;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
-    color: #101113;
+    background: var(--accent-strong);
+    color: #ffffff;
     height: 52px;
     min-width: 220px;
     padding: 0 1.2rem;
