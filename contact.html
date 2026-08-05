@@ -56,71 +56,113 @@
                         <input type="hidden" name="subject" value="Новая заявка с сайта APK Studio">
                         <input type="hidden" name="from_name" value="APK Studio">
                         <input type="checkbox" name="botcheck" class="form-botcheck" tabindex="-1" autocomplete="off">
-                        <div class="project-create-head">
-                            <div>
-                                <h1>Параметры проекта</h1>
-                                <p>Заполните поля ниже — это поможет быстрее подготовить персональное предложение.</p>
+                        
+                        <div class="project-form-section">
+                            <div class="project-form-section-header">
+                                <svg class="project-form-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="8" r="3"/>
+                                    <path d="M12 14c-4 0-7 2-7 5v2h14v-2c0-3-3-5-7-5z"/>
+                                </svg>
+                                <h3>Контактные данные</h3>
+                            </div>
+                            <div class="project-form-section-content">
+                                <label class="project-create-field">
+                                    <span>ФИО <em>*</em></span>
+                                    <input type="text" name="fullName" placeholder="Иванов Иван Иванович" required>
+                                </label>
+
+                                <label class="project-create-field">
+                                    <span>Почта <em>*</em></span>
+                                    <input type="email" name="email" placeholder="example@mail.ru" required>
+                                </label>
+
+                                <label class="project-create-field">
+                                    <span>Номер телефона <em>*</em></span>
+                                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                                </label>
                             </div>
                         </div>
 
-                        <label class="project-create-field">
-                            <span>ФИО <em>*</em></span>
-                            <input type="text" name="fullName" placeholder="Иванов Иван Иванович" required>
-                        </label>
-
-                        <label class="project-create-field">
-                            <span>Почта <em>*</em></span>
-                            <input type="email" name="email" placeholder="example@mail.ru" required>
-                        </label>
-
-                        <label class="project-create-field">
-                            <span>Номер телефона <em>*</em></span>
-                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-                        </label>
-
-                        <fieldset class="project-create-types">
-                            <legend>Тип объекта</legend>
-                            <input type="hidden" name="objectType" id="objectType" value="Квартира">
-                            <div class="project-type-grid">
-                                <button type="button" class="project-type-card is-selected" data-type="Квартира">
-                                    <span class="project-type-icon icon-cyan">🏢</span>
-                                    <strong>Квартира</strong>
-                                </button>
-                                <button type="button" class="project-type-card" data-type="Дом">
-                                    <span class="project-type-icon icon-green">🏠</span>
-                                    <strong>Дом</strong>
-                                </button>
-                                <button type="button" class="project-type-card" data-type="Офис">
-                                    <span class="project-type-icon icon-amber">💼</span>
-                                    <strong>Офис</strong>
-                                </button>
-                                <button type="button" class="project-type-card" data-type="Коммерция">
-                                    <span class="project-type-icon icon-red">🏬</span>
-                                    <strong>Коммерция</strong>
-                                </button>
+                        <div class="project-form-section">
+                            <div class="project-form-section-header">
+                                <svg class="project-form-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="3" y="3" width="18" height="18" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M9 9h6m-6 3h6m-6 3h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <h3>Параметры проекта</h3>
                             </div>
-                        </fieldset>
+                            <div class="project-form-section-content">
+                                <fieldset class="project-create-types">
+                                    <legend>ТИП ОБЪЕКТА</legend>
+                                    <input type="hidden" name="objectType" id="objectType" value="Квартира">
+                                    <div class="project-type-grid">
+                                        <button type="button" class="project-type-card is-selected" data-type="Квартира">
+                                            <span class="project-type-icon icon-cyan">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M4 10.5 12 4l8 6.5"></path>
+                                                    <path d="M7 10.5V20h10V10.5"></path>
+                                                    <path d="M10 20v-4h4v4"></path>
+                                                </svg>
+                                            </span>
+                                            <strong>Квартира</strong>
+                                        </button>
+                                        <button type="button" class="project-type-card" data-type="Дом">
+                                            <span class="project-type-icon icon-green">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M3 10.5 12 4l9 6.5"></path>
+                                                    <path d="M6 10.5V20h12V10.5"></path>
+                                                    <path d="M9 20v-6h6v6"></path>
+                                                </svg>
+                                            </span>
+                                            <strong>Дом</strong>
+                                        </button>
+                                        <button type="button" class="project-type-card" data-type="Офис">
+                                            <span class="project-type-icon icon-amber">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                    <rect x="4" y="5" width="16" height="14" rx="2"></rect>
+                                                    <path d="M9 5v14"></path>
+                                                    <path d="M15 5v14"></path>
+                                                    <path d="M4 10h16"></path>
+                                                </svg>
+                                            </span>
+                                            <strong>Офис</strong>
+                                        </button>
+                                        <button type="button" class="project-type-card" data-type="Коммерция">
+                                            <span class="project-type-icon icon-red">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M4 7h16"></path>
+                                                    <path d="M6 7v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"></path>
+                                                    <path d="M9 11h6"></path>
+                                                    <path d="M9 15h6"></path>
+                                                </svg>
+                                            </span>
+                                            <strong>Коммерция</strong>
+                                        </button>
+                                    </div>
+                                </fieldset>
 
-                        <label class="project-create-field">
-                            <span>Город</span>
-                            <input type="text" name="city" placeholder="Введите город">
-                            <small>Опционально</small>
-                        </label>
+                                <label class="project-create-field">
+                                    <span>Город</span>
+                                    <input type="text" name="city" placeholder="Выберите город">
+                                    <small>Опционально</small>
+                                </label>
 
-                        <label class="project-create-field">
-                            <span>Площадь</span>
-                            <div class="project-area-input-wrap">
-                                <input type="number" min="0" step="0.1" name="area" placeholder="0">
-                                <b>м²</b>
+                                <label class="project-create-field">
+                                    <span>Площадь</span>
+                                    <div class="project-area-input-wrap">
+                                        <input type="number" min="0" step="0.1" name="area" placeholder="0">
+                                        <b>м²</b>
+                                    </div>
+                                    <small>Опционально</small>
+                                </label>
+
+                                <label class="project-create-field project-create-field-wide">
+                                    <span>Описание проекта</span>
+                                    <textarea name="description" rows="4" placeholder="Расскажите кратко о задаче, стиле и пожеланиях"></textarea>
+                                    <small>Опционально</small>
+                                </label>
                             </div>
-                            <small>Опционально</small>
-                        </label>
-
-                        <label class="project-create-field project-create-field-wide">
-                            <span>Описание проекта</span>
-                            <textarea name="description" rows="4" placeholder="Расскажите кратко о задаче, стиле и пожеланиях"></textarea>
-                            <small>Опционально</small>
-                        </label>
+                        </div>
 
                         <div class="project-create-actions">
                             <button type="submit" class="project-create-submit">Отправить заявку</button>
